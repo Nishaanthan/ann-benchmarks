@@ -29,21 +29,21 @@ jobs:
       matrix:
         dataset: [random-xs-20-angular]
         library:
-          - annoy
+          # - annoy
           - balltree
-          # - bruteforce
-          # - ckdtree
-          # # - diskann
+          - bruteforce
+          - ckdtree
+          # - diskann
           # - dolphinnpy
           # - elasticsearch
           # - elastiknn
           # - faiss
           # - flann
-          # # - glass
+          # - glass
           # - hnswlib
           # - kdtree
           # - luceneknn
-          # # - milvus
+          # - milvus
           # - mrpt
           # - nndescent
           # - n2
@@ -67,8 +67,8 @@ jobs:
           # - voyager
           # - weaviate
         include:
-          - library: pynndescent
-            dataset: random-xs-16-hamming
+          # - library: pynndescent
+          #   dataset: random-xs-16-hamming
           # - library: datasketch
           #   dataset: random-s-jaccard
           # - library: pynndescent
@@ -101,10 +101,41 @@ jobs:
         python3 plot.py --dataset $DATASET --output plot-batch.png --batch
         python3 data_export.py --out test.csv
         python3 create_website.py --outputdir . --scatter --latex
-      # Upload desired files as artifacts
 
-    - name: Upload results
-      uses: actions/upload-artifact@v2
-      with:
-        name: ${{ matrix.library }}-${{ matrix.dataset }}
-        path: .
+  # upload artifacts as a workflow step
+  upload-artifacts:
+    needs: run-benchmarks
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3 # Pull the repository
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.library }} (${{ matrix.dataset }})
+          path: |
+            results/
+            plot.png
+            plot-batch.png
+            test.csv
+            website/
+
+  # publish website as github pages
+  publish-website:
+    needs: run-benchmarks
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3 # Pull the repository
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.library }} (${{ matrix.dataset }})
+          path: |
+            results/
+            plot.png
+            plot-batch.png
+            test.csv
+            website/
+      - uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: website
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
