@@ -94,21 +94,29 @@ jobs:
 
     - name: Run the benchmark
       run: |
-        python3 run.py --docker-tag ann-benchmarks-${LIBRARY} --max-n-algorithms 3 --runs 2 --dataset $DATASET --run-disabled --timeout 300
-        python3 run.py --docker-tag ann-benchmarks-${LIBRARY} --max-n-algorithms 3 --runs 2 --dataset $DATASET --run-disabled --batch --timeout 300
-        sudo chmod -R 777 results/
-        python3 plot.py --dataset $DATASET --output plot.png
-        python3 plot.py --dataset $DATASET --output plot-batch.png --batch
-        python3 data_export.py --out test.csv
-        python3 create_website.py --outputdir . --scatter --latex
+        # Determine the last library in the matrix dynamically
+        LAST_INDEX=$(( ${#LIBRARY[@]} - 1 ))
+        LAST_LIBRARY=${LIBRARY[${LAST_INDEX}]}
+
+        # Run plotting and other post-processing steps after all benchmarks are completed
+        if [[ $LIBRARY == $LAST_LIBRARY ]]; then
+          python3 run.py --dataset $DATASET --run-disabled --timeout 300
+          python3 run.py --dataset $DATASET --run-disabled --batch --timeout 300
+          sudo chmod -R 777 results/
+          python3 plot.py --dataset $DATASET --output plot.png
+          python3 plot.py --dataset $DATASET --output plot-batch.png --batch
+          python3 data_export.py --out test.csv
+          python3 create_website.py --outputdir . --scatter --latex
+        fi
     
     - name: Combine Results
       run: |
         mkdir combined_results  # Create a directory to store combined results
         # Move the specific files or directories you want to include
-        cp plot.png combined_results/plot_${LIBRARY}.png
-        cp plot-batch.png combined_results/plot-batch${LIBRARY}.png
-        cp test.csv combined_results/test_${LIBRARY}.csv
+        cp plot.png combined_results/plot.png
+        cp plot-batch.png combined_results/plot-batch.png
+        cp test.csv combined_results/test.csv
+        cp -r . combined_results/all
         
         # Optionally, create a ZIP archive for convenience
         zip -r combined_results.zip combined_results/
