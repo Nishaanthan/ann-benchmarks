@@ -102,7 +102,9 @@ jobs:
         python3 data_export.py --out test.csv
         python3 create_website.py --outputdir . --scatter --latex
       # Upload desired files as artifacts
+
+    - name: Upload results
       uses: actions/upload-artifact@v2
       with:
-        name: website-artifacts  # Name for your artifacts
+        name: ${{ matrix.library }}-${{ matrix.dataset }}
         path: .
