@@ -107,6 +107,9 @@ jobs:
           python3 plot.py --dataset $DATASET --output plot-batch.png --batch
           python3 data_export.py --out test.csv
           python3 create_website.py --outputdir . --scatter --latex
+        else
+            # Print message for libraries that are not the last one
+            echo "This is not the last library"
         fi
     
     - name: Combine Results
@@ -116,7 +119,6 @@ jobs:
         cp plot.png combined_results/plot.png
         cp plot-batch.png combined_results/plot-batch.png
         cp test.csv combined_results/test.csv
-        cp -r . combined_results/all
         
         # Optionally, create a ZIP archive for convenience
         zip -r combined_results.zip combined_results/
