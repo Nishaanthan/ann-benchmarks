@@ -43,7 +43,7 @@ jobs:
       run: |
         # get all existing docker images
         docker images
-        python3 run.py
+        python3 run.py --dataset glove-100-angular
         sudo chmod -R 777 results/
         python3 plot.py --output plot-batch.png --batch
         python3 data_export.py --out test.csv
