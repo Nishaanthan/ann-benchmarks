@@ -102,8 +102,19 @@ jobs:
         python3 data_export.py --out test.csv
         python3 create_website.py --outputdir . --scatter --latex
     
-    - name: Upload Results
+    - name: Combine Results
+      run: |
+        mkdir combined_results  # Create a directory to store combined results
+        # Move the specific files or directories you want to include
+        cp plot.png combined_results/
+        cp plot-batch.png combined_results/
+        cp test.csv combined_results/
+        
+        # Optionally, create a ZIP archive for convenience
+        zip -r combined_results.zip combined_results/
+      
+    - name: Upload Combined Results
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ matrix.library }}-${{ matrix.dataset }}
-        path: results/
+        name: combined-results-artifact  # Name for your artifact
+        path: combined_results/  
