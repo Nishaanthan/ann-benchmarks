@@ -30,7 +30,7 @@ jobs:
         dataset: [random-xs-20-angular]
         library:
           # - annoy
-          - balltree
+          # - balltree
           - bruteforce
           - ckdtree
           # - diskann
