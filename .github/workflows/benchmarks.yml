@@ -101,27 +101,9 @@ jobs:
         python3 plot.py --dataset $DATASET --output plot-batch.png --batch
         python3 data_export.py --out test.csv
         python3 create_website.py --outputdir . --scatter --latex
-        ls
-
-  # upload artifacts as a workflow step
-  upload-artifacts:
-    needs: run-benchmarks
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3 # Pull the repository
-      - uses: actions/upload-artifact@v2
-        with:
-          name: ${{ matrix.library }} (${{ matrix.dataset }})
-          path: .
-
-  # publish website as github pages
-  publish-website:
-    needs: run-benchmarks
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: results
-          clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ matrix.library }}-${{ matrix.dataset }}
+        path: results/
