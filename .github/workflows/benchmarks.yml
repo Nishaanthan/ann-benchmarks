@@ -31,7 +31,7 @@ jobs:
         library:
           - annoy
           - balltree
-          - bruteforce
+          # - bruteforce
           # - ckdtree
           # # - diskann
           # - dolphinnpy
@@ -69,10 +69,10 @@ jobs:
         include:
           - library: pynndescent
             dataset: random-xs-16-hamming
-          - library: datasketch
-            dataset: random-s-jaccard
-          - library: pynndescent
-            dataset: random-s-jaccard
+          # - library: datasketch
+          #   dataset: random-s-jaccard
+          # - library: pynndescent
+          #   dataset: random-s-jaccard
 
     name: ${{ matrix.library }} (${{ matrix.dataset }})
 
@@ -101,3 +101,8 @@ jobs:
         python3 plot.py --dataset $DATASET --output plot-batch.png --batch
         python3 data_export.py --out test.csv
         python3 create_website.py --outputdir . --scatter --latex
+      # Upload desired files as artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: website-artifacts  # Name for your artifacts
+        path: .
