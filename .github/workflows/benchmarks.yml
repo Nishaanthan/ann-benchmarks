@@ -106,9 +106,9 @@ jobs:
       run: |
         mkdir combined_results  # Create a directory to store combined results
         # Move the specific files or directories you want to include
-        cp plot.png combined_results/
-        cp plot-batch.png combined_results/
-        cp test.csv combined_results/
+        cp plot.png combined_results/ plot_${LIBRARY}.png
+        cp plot-batch.png combined_results/ plot-batch${LIBRARY}.png
+        cp test.csv combined_results/ test_${LIBRARY}.csv
         
         # Optionally, create a ZIP archive for convenience
         zip -r combined_results.zip combined_results/
