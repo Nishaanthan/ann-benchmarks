@@ -27,9 +27,9 @@ jobs:
     # build the docker images for the algorithms ckdtree and kdtree
     - name: Build Library Docker Image
       run: |
-        python3 install.py
-        # python3 install.py --algorithm ckdtree
-        # python3 install.py --algorithm kdtree
+        # python3 install.py
+        python3 install.py --algorithm ckdtree
+        python3 install.py --algorithm kdtree
 
     - name: Run the benchmark
       run: |
