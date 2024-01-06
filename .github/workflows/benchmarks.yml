@@ -35,7 +35,7 @@ jobs:
       run: |
         # get all existing docker images
         docker images
-        python run.py --run-disabled
+        python run.py --max-n-algorithms 3 --runs 3 --parallelism 2 --dataset random-xs-20-angular --run-disabled --batch --timeout 300
         # python run.py --algorithm ckdtree --output results/ckdtree.json
         # python run.py --algorithm kdtree --output results/kdtree.json
         sudo chmod -R 777 results/
