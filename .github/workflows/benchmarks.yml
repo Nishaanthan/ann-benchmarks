@@ -35,11 +35,11 @@ jobs:
       run: |
         # get all existing docker images
         docker images
-        python run.py --max-n-algorithms 3 --runs 1 --dataset glove-25-angular --timeout 300
+        python run.py --max-n-algorithms 2 --runs 1 --dataset random-xs-20-angular --run-disabled --timeout 300
         # python run.py --algorithm ckdtree --output results/ckdtree.json
         # python run.py --algorithm kdtree --output results/kdtree.json
         sudo chmod -R 777 results/
-        python3 plot.py --dataset glove-25-angular --output plot.png
+        python3 plot.py --dataset random-xs-20-angular --output plot-batch.png 
         python3 data_export.py --out test.csv
         python3 create_website.py --outputdir . --scatter --latex
 
