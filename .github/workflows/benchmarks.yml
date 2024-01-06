@@ -27,15 +27,17 @@ jobs:
     # build the docker images for the algorithms ckdtree and kdtree
     - name: Build Library Docker Image
       run: |
-        python3 install.py --algorithm ckdtree
-        python3 install.py --algorithm kdtree
-
+        python3 install.py
+        # python3 install.py --algorithm ckdtree
+        # python3 install.py --algorithm kdtree
 
     - name: Run the benchmark
       run: |
         # get all existing docker images
         docker images
-        python run.py --dataset glove-100-angular --algorithm ckdtree kdtree
+        python run.py
+        # python run.py --algorithm ckdtree --output results/ckdtree.json
+        # python run.py --algorithm kdtree --output results/kdtree.json
         sudo chmod -R 777 results/
         python3 plot.py --output plot-batch.png --batch
         python3 data_export.py --out test.csv
