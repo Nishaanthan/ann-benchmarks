@@ -28,8 +28,8 @@ jobs:
     - name: Build Library Docker Image
       run: |
         # python3 install.py
-        python3 install.py --algorithm ckdtree
-        python3 install.py --algorithm kdtree
+        python3 install.py --algorithm scann
+        python3 install.py --algorithm annoy
 
     - name: Run the benchmark
       run: |
