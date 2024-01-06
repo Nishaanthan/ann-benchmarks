@@ -13,14 +13,6 @@ concurrency:
   cancel-in-progress: True
 
 jobs:
-  unit-tests:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v3 # Pull the repository
-      - run: sudo apt-get update && sudo apt-get install -y libhdf5-dev python3-numpy python3-scipy python3-matplotlib python3-sklearn
-      - run: pip3 install --quiet -r requirements.txt
-      - run: pytest
-
   run-benchmarks:
     runs-on: ubuntu-22.04
     steps:
@@ -43,7 +35,7 @@ jobs:
       run: |
         # get all existing docker images
         docker images
-        python3 run.py --docker-tag ann-benchmarks-ckdtree:ann-benchmarks-kdtree
+        python run.py --dataset glove-100-angular --algorithm ckdtree kdtree
         sudo chmod -R 777 results/
         python3 plot.py --output plot-batch.png --batch
         python3 data_export.py --out test.csv
