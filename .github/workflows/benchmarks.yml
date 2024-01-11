@@ -30,6 +30,7 @@ jobs:
         # python3 install.py
         python3 install.py --algorithm scann
         python3 install.py --algorithm annoy
+        python3 install.py --algorithm sgia
 
     - name: Run the benchmark
       run: |
