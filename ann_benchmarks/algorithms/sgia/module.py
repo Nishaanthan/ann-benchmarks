@@ -11,7 +11,16 @@ class Sgia(BaseANN):
     def fit(self, X):
         self._dimensions = X.shape[1]
         self._sgia = SGIA(dimensions=self._dimensions)
+        y = 0
         for i, x in enumerate(X):
+            if(y == 0):
+                print ("====VECTOR======================================================")
+                print (x.tolist())
+                print ("====END VECTOR======================================================")
+                print ("====DIMENSION======================================================")
+                print (self._dimensions)
+                print ("====END DIMENSION======================================================")
+                y = 1
             self._sgia.insert(x.tolist(), i)
 
     def set_query_arguments(self, query):
