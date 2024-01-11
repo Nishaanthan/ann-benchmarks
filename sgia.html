@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>scann</title>
+        <title>sgia</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for scann</h2>
+                                                        <h2>Plots for sgia</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,11 +62,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -155,11 +151,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2589, 72757.14682209269)
-                                    (0.4032, 68599.39158025579)
-                                    (0.6325000000000001, 65835.3450846819)
-                                    (0.8534, 60922.98753740232)
-                                    (1.0, 41675.48339659387)
+                                                (0.0014, 138.6336420358035)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -184,7 +176,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -273,7 +265,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.47143983840942383)
+                                                (0.0014, 0.056855201721191406)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -298,7 +290,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -387,7 +379,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 5248.0)
+                                                (0.0014, 10240.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -524,8 +516,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.024915230562852976 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.4185312102597718 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -614,8 +605,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.024915230562852976, 60922.98753740232)
-                                    (0.02358082796574708, 41675.48339659387)
+                                                (1.4185312102597718, 138.6336420358035)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -640,10 +630,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 6.472, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 8.743, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 9.889, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -732,10 +719,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2589, 6.472)
-                                    (0.4032, 8.743)
-                                    (0.6325000000000001, 9.889)
-                                    (1.0, 10.0)
+                                                (0.0014, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -760,11 +744,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.07213037109375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.07650213623046875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.07971401977539064, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.08614154052734375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.12592535400390625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 73.8637451171875, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -853,11 +833,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2589, 0.07213037109375)
-                                    (0.4032, 0.07650213623046875)
-                                    (0.6325000000000001, 0.07971401977539064)
-                                    (0.8534, 0.08614154052734375)
-                                    (1.0, 0.12592535400390625)
+                                                (0.0014, 73.8637451171875)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -882,11 +858,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.22010000000000002 , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.3392 , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.532 , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.7329 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0009 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -975,11 +947,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.22010000000000002, 72757.14682209269)
-                                    (0.3392, 68599.39158025579)
-                                    (0.532, 65835.3450846819)
-                                    (0.7329, 60922.98753740232)
-                                    (1.0, 41675.48339659387)
+                                                (0.0009, 138.6336420358035)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1004,11 +972,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2949 , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4605 , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.7131000000000001 , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9231 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0021000000000000003 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1097,11 +1061,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2949, 72757.14682209269)
-                                    (0.4605, 68599.39158025579)
-                                    (0.7131000000000001, 65835.3450846819)
-                                    (0.9231, 60922.98753740232)
-                                    (1.0, 41675.48339659387)
+                                                (0.0021000000000000003, 138.6336420358035)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1126,11 +1086,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.0133514404296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.01430511474609375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.015020370483398438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.01621246337890625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.02384185791015625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 4.075407981872559, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1219,11 +1175,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2589, 0.0133514404296875)
-                                    (0.4032, 0.01430511474609375)
-                                    (0.6325000000000001, 0.015020370483398438)
-                                    (0.8534, 0.01621246337890625)
-                                    (1.0, 0.02384185791015625)
+                                                (0.0014, 4.075407981872559)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1248,10 +1200,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.01621246337890625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.017881393432617188, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.02574920654296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 48.63696098327637, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1340,10 +1289,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2589, 0.01621246337890625)
-                                    (0.6325000000000001, 0.016450881958007812)
-                                    (0.8534, 0.017881393432617188)
-                                    (1.0, 0.02574920654296875)
+                                                (0.0014, 48.63696098327637)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1368,10 +1314,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.4032 , y: 0.020267963409423825, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.020983219146728512, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.026948451995849602, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.029850006103515583, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 49.248459339141846, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1460,10 +1403,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.4032, 0.020267963409423825)
-                                    (0.6325000000000001, 0.020983219146728512)
-                                    (0.8534, 0.026948451995849602)
-                                    (1.0, 0.029850006103515583)
+                                                (0.0014, 49.248459339141846)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1488,9 +1428,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.03388643264770787, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.03409385681152344, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04697823524475186, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 49.712013244628956, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1579,9 +1517,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2589, 0.03388643264770787)
-                                    (0.8534, 0.03409385681152344)
-                                    (1.0, 0.04697823524475186)
+                                                (0.0014, 49.712013244628956)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1593,7 +1529,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for scann</h2>
+                                                        <h2>Scatterplots for sgia</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1608,31 +1544,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 39149.34289127838, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 37979.499438588864, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 36851.620158852886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 35672.827168578886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 33233.52904355543, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 31898.273632975888, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 30618.710077745734, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 28940.40530190645, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 26847.66940202015, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 24022.22209494791, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 21783.386827043927, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 19570.28742067936, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 18279.57795278336, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 16005.43397378413, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 13988.89374347549, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 13052.86743928398, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 12219.02930723067, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10436.240041005429, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 8472.827909419631, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5471.357030392921, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.63136470240525, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.46229062686487, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.3217041924763, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.2591240452439, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.18102966001925, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.17022319396295, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.15547741659287, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 138.0626922459355, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 137.818395661079, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 137.4039069544859, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 131.57021528960948, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1721,31 +1644,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2589, 72757.14682209269)
-                                    (0.4032, 68599.39158025579)
-                                    (0.6325000000000001, 65835.3450846819)
-                                    (0.8534, 60922.98753740232)
-                                    (1.0, 41675.48339659387)
-                                    (1.0, 39149.34289127838)
-                                    (0.9997999999999999, 37979.499438588864)
-                                    (0.9997999999999999, 36851.620158852886)
-                                    (0.9997999999999999, 35672.827168578886)
-                                    (1.0, 33233.52904355543)
-                                    (1.0, 31898.273632975888)
-                                    (1.0, 30618.710077745734)
-                                    (1.0, 28940.40530190645)
-                                    (1.0, 26847.66940202015)
-                                    (1.0, 24022.22209494791)
-                                    (1.0, 21783.386827043927)
-                                    (1.0, 19570.28742067936)
-                                    (1.0, 18279.57795278336)
-                                    (1.0, 16005.43397378413)
-                                    (1.0, 13988.89374347549)
-                                    (1.0, 13052.86743928398)
-                                    (1.0, 12219.02930723067)
-                                    (1.0, 10436.240041005429)
-                                    (1.0, 8472.827909419631)
-                                    (1.0, 5471.357030392921)
+                                                (0.0014, 138.6336420358035)
+                                    (0.0014, 138.63136470240525)
+                                    (0.0014, 138.46229062686487)
+                                    (0.0014, 138.3217041924763)
+                                    (0.0014, 138.2591240452439)
+                                    (0.0014, 138.18102966001925)
+                                    (0.0014, 138.17022319396295)
+                                    (0.0014, 138.15547741659287)
+                                    (0.0014, 138.0626922459355)
+                                    (0.0014, 137.818395661079)
+                                    (0.0014, 137.4039069544859)
+                                    (0.0014, 131.57021528960948)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1770,31 +1680,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.2589 , y: 0.47143983840942383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 0.056855201721191406, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -1883,31 +1780,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (1.0, 0.47143983840942383)
-                                    (0.9997999999999999, 0.47143983840942383)
-                                    (0.9997999999999999, 0.47143983840942383)
-                                    (0.9997999999999999, 0.47143983840942383)
-                                    (0.8534, 0.47143983840942383)
-                                    (0.6325000000000001, 0.47143983840942383)
-                                    (0.4032, 0.47143983840942383)
-                                    (0.2589, 0.47143983840942383)
+                                                (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
+                                    (0.0014, 0.056855201721191406)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1932,31 +1816,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.2589 , y: 5248.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10240.0, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -2045,31 +1916,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (0.9997999999999999, 5248.0)
-                                    (0.9997999999999999, 5248.0)
-                                    (0.9997999999999999, 5248.0)
-                                    (0.8534, 5248.0)
-                                    (0.6325000000000001, 5248.0)
-                                    (0.4032, 5248.0)
-                                    (0.2589, 5248.0)
+                                                (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
+                                    (0.0014, 10240.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2206,31 +2064,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: inf , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: inf , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: inf , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.024915230562852976 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 39149.34289127838, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358872261435372 , y: 37979.499438588864, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358872261435372 , y: 36851.620158852886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358872261435372 , y: 35672.827168578886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 33233.52904355543, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 31898.273632975888, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 30618.710077745734, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 28940.40530190645, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 26847.66940202015, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 24022.22209494791, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 21783.386827043927, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 19570.28742067936, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 18279.57795278336, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 16005.43397378413, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 13988.89374347549, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 13052.86743928398, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 12219.02930723067, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 10436.240041005429, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 8472.827909419631, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.02358082796574708 , y: 5471.357030392921, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.4185312102597718 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.63136470240525, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.46229062686487, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.3217041924763, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.2591240452439, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.18102966001925, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.17022319396295, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.15547741659287, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 138.0626922459355, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 137.818395661079, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 137.4039069544859, label: "SGIA(dimensions=20)" },
+                                                                    { x: 1.4185312102597718 , y: 131.57021528960948, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -2319,31 +2164,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (inf, 72757.14682209269)
-                                    (inf, 68599.39158025579)
-                                    (inf, 65835.3450846819)
-                                    (0.024915230562852976, 60922.98753740232)
-                                    (0.02358082796574708, 41675.48339659387)
-                                    (0.02358082796574708, 39149.34289127838)
-                                    (0.02358872261435372, 37979.499438588864)
-                                    (0.02358872261435372, 36851.620158852886)
-                                    (0.02358872261435372, 35672.827168578886)
-                                    (0.02358082796574708, 33233.52904355543)
-                                    (0.02358082796574708, 31898.273632975888)
-                                    (0.02358082796574708, 30618.710077745734)
-                                    (0.02358082796574708, 28940.40530190645)
-                                    (0.02358082796574708, 26847.66940202015)
-                                    (0.02358082796574708, 24022.22209494791)
-                                    (0.02358082796574708, 21783.386827043927)
-                                    (0.02358082796574708, 19570.28742067936)
-                                    (0.02358082796574708, 18279.57795278336)
-                                    (0.02358082796574708, 16005.43397378413)
-                                    (0.02358082796574708, 13988.89374347549)
-                                    (0.02358082796574708, 13052.86743928398)
-                                    (0.02358082796574708, 12219.02930723067)
-                                    (0.02358082796574708, 10436.240041005429)
-                                    (0.02358082796574708, 8472.827909419631)
-                                    (0.02358082796574708, 5471.357030392921)
+                                                (1.4185312102597718, 138.6336420358035)
+                                    (1.4185312102597718, 138.63136470240525)
+                                    (1.4185312102597718, 138.46229062686487)
+                                    (1.4185312102597718, 138.3217041924763)
+                                    (1.4185312102597718, 138.2591240452439)
+                                    (1.4185312102597718, 138.18102966001925)
+                                    (1.4185312102597718, 138.17022319396295)
+                                    (1.4185312102597718, 138.15547741659287)
+                                    (1.4185312102597718, 138.0626922459355)
+                                    (1.4185312102597718, 137.818395661079)
+                                    (1.4185312102597718, 137.4039069544859)
+                                    (1.4185312102597718, 131.57021528960948)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2368,31 +2200,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 6.472, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 8.743, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 9.889, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 10.0, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -2481,31 +2300,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2589, 6.472)
-                                    (0.4032, 8.743)
-                                    (0.6325000000000001, 9.889)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (0.9997999999999999, 10.0)
-                                    (0.9997999999999999, 10.0)
-                                    (0.9997999999999999, 10.0)
-                                    (0.8534, 10.0)
+                                                (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
+                                    (0.0014, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2530,31 +2336,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.07213037109375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.07650213623046875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.07971401977539064, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.08614154052734375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.12592535400390625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.13405078125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.1381798095703125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.142408935546875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.14711477661132813, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.15791281127929688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.16452301025390625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.17139846801757816, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.18133816528320315, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.19547320556640624, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.21846438598632814, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.24091754150390626, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.26816162109374997, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.28709634399414063, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.32788864135742185, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.37515475463867193, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.40205725097656253, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.4294940185546875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.5028630981445312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.6193917846679687, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.9591770324707031, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 73.8637451171875, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 73.86495849609375, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 73.95515380859375, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.03031982421875, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.063828125, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.10568603515625, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.11148193359374, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.11939208984374, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.1692041015625, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.30067626953125, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 74.5248095703125, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 77.8291650390625, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -2643,31 +2436,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2589, 0.07213037109375)
-                                    (0.4032, 0.07650213623046875)
-                                    (0.6325000000000001, 0.07971401977539064)
-                                    (0.8534, 0.08614154052734375)
-                                    (1.0, 0.12592535400390625)
-                                    (1.0, 0.13405078125)
-                                    (0.9997999999999999, 0.1381798095703125)
-                                    (0.9997999999999999, 0.142408935546875)
-                                    (0.9997999999999999, 0.14711477661132813)
-                                    (1.0, 0.15791281127929688)
-                                    (1.0, 0.16452301025390625)
-                                    (1.0, 0.17139846801757816)
-                                    (1.0, 0.18133816528320315)
-                                    (1.0, 0.19547320556640624)
-                                    (1.0, 0.21846438598632814)
-                                    (1.0, 0.24091754150390626)
-                                    (1.0, 0.26816162109374997)
-                                    (1.0, 0.28709634399414063)
-                                    (1.0, 0.32788864135742185)
-                                    (1.0, 0.37515475463867193)
-                                    (1.0, 0.40205725097656253)
-                                    (1.0, 0.4294940185546875)
-                                    (1.0, 0.5028630981445312)
-                                    (1.0, 0.6193917846679687)
-                                    (1.0, 0.9591770324707031)
+                                                (0.0014, 73.8637451171875)
+                                    (0.0014, 73.86495849609375)
+                                    (0.0014, 73.95515380859375)
+                                    (0.0014, 74.03031982421875)
+                                    (0.0014, 74.063828125)
+                                    (0.0014, 74.10568603515625)
+                                    (0.0014, 74.11148193359374)
+                                    (0.0014, 74.11939208984374)
+                                    (0.0014, 74.1692041015625)
+                                    (0.0014, 74.30067626953125)
+                                    (0.0014, 74.5248095703125)
+                                    (0.0014, 77.8291650390625)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2692,31 +2472,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.22010000000000002 , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.3392 , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.532 , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.7329 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 39149.34289127838, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9974999999999999 , y: 37979.499438588864, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9974999999999999 , y: 36851.620158852886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9974999999999999 , y: 35672.827168578886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 33233.52904355543, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 31898.273632975888, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 30618.710077745734, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 28940.40530190645, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 26847.66940202015, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 24022.22209494791, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 21783.386827043927, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 19570.28742067936, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 18279.57795278336, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 16005.43397378413, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 13988.89374347549, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 13052.86743928398, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 12219.02930723067, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10436.240041005429, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 8472.827909419631, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5471.357030392921, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0009 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.63136470240525, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.46229062686487, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.3217041924763, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.2591240452439, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.18102966001925, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.17022319396295, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.15547741659287, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 138.0626922459355, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 137.818395661079, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 137.4039069544859, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0009 , y: 131.57021528960948, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -2805,31 +2572,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.22010000000000002, 72757.14682209269)
-                                    (0.3392, 68599.39158025579)
-                                    (0.532, 65835.3450846819)
-                                    (0.7329, 60922.98753740232)
-                                    (1.0, 41675.48339659387)
-                                    (1.0, 39149.34289127838)
-                                    (0.9974999999999999, 37979.499438588864)
-                                    (0.9974999999999999, 36851.620158852886)
-                                    (0.9974999999999999, 35672.827168578886)
-                                    (1.0, 33233.52904355543)
-                                    (1.0, 31898.273632975888)
-                                    (1.0, 30618.710077745734)
-                                    (1.0, 28940.40530190645)
-                                    (1.0, 26847.66940202015)
-                                    (1.0, 24022.22209494791)
-                                    (1.0, 21783.386827043927)
-                                    (1.0, 19570.28742067936)
-                                    (1.0, 18279.57795278336)
-                                    (1.0, 16005.43397378413)
-                                    (1.0, 13988.89374347549)
-                                    (1.0, 13052.86743928398)
-                                    (1.0, 12219.02930723067)
-                                    (1.0, 10436.240041005429)
-                                    (1.0, 8472.827909419631)
-                                    (1.0, 5471.357030392921)
+                                                (0.0009, 138.6336420358035)
+                                    (0.0009, 138.63136470240525)
+                                    (0.0009, 138.46229062686487)
+                                    (0.0009, 138.3217041924763)
+                                    (0.0009, 138.2591240452439)
+                                    (0.0009, 138.18102966001925)
+                                    (0.0009, 138.17022319396295)
+                                    (0.0009, 138.15547741659287)
+                                    (0.0009, 138.0626922459355)
+                                    (0.0009, 137.818395661079)
+                                    (0.0009, 137.4039069544859)
+                                    (0.0009, 131.57021528960948)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2854,31 +2608,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2949 , y: 72757.14682209269, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4605 , y: 68599.39158025579, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.7131000000000001 , y: 65835.3450846819, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9231 , y: 60922.98753740232, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 41675.48339659387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 39149.34289127838, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 37979.499438588864, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 36851.620158852886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 35672.827168578886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 33233.52904355543, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 31898.273632975888, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 30618.710077745734, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 28940.40530190645, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 26847.66940202015, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 24022.22209494791, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 21783.386827043927, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 19570.28742067936, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 18279.57795278336, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 16005.43397378413, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 13988.89374347549, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 13052.86743928398, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 12219.02930723067, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 10436.240041005429, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 8472.827909419631, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 5471.357030392921, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0021000000000000003 , y: 138.6336420358035, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.63136470240525, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.46229062686487, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.3217041924763, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.2591240452439, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.18102966001925, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.17022319396295, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.15547741659287, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 138.0626922459355, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 137.818395661079, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 137.4039069544859, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0021000000000000003 , y: 131.57021528960948, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -2967,31 +2708,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2949, 72757.14682209269)
-                                    (0.4605, 68599.39158025579)
-                                    (0.7131000000000001, 65835.3450846819)
-                                    (0.9231, 60922.98753740232)
-                                    (1.0, 41675.48339659387)
-                                    (1.0, 39149.34289127838)
-                                    (1.0, 37979.499438588864)
-                                    (1.0, 36851.620158852886)
-                                    (1.0, 35672.827168578886)
-                                    (1.0, 33233.52904355543)
-                                    (1.0, 31898.273632975888)
-                                    (1.0, 30618.710077745734)
-                                    (1.0, 28940.40530190645)
-                                    (1.0, 26847.66940202015)
-                                    (1.0, 24022.22209494791)
-                                    (1.0, 21783.386827043927)
-                                    (1.0, 19570.28742067936)
-                                    (1.0, 18279.57795278336)
-                                    (1.0, 16005.43397378413)
-                                    (1.0, 13988.89374347549)
-                                    (1.0, 13052.86743928398)
-                                    (1.0, 12219.02930723067)
-                                    (1.0, 10436.240041005429)
-                                    (1.0, 8472.827909419631)
-                                    (1.0, 5471.357030392921)
+                                                (0.0021000000000000003, 138.6336420358035)
+                                    (0.0021000000000000003, 138.63136470240525)
+                                    (0.0021000000000000003, 138.46229062686487)
+                                    (0.0021000000000000003, 138.3217041924763)
+                                    (0.0021000000000000003, 138.2591240452439)
+                                    (0.0021000000000000003, 138.18102966001925)
+                                    (0.0021000000000000003, 138.17022319396295)
+                                    (0.0021000000000000003, 138.15547741659287)
+                                    (0.0021000000000000003, 138.0626922459355)
+                                    (0.0021000000000000003, 137.818395661079)
+                                    (0.0021000000000000003, 137.4039069544859)
+                                    (0.0021000000000000003, 131.57021528960948)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3016,31 +2744,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.0133514404296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.01430511474609375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.015020370483398438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.01621246337890625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.02384185791015625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.025272369384765625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.025987625122070312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.026702880859375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.02765655517578125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.02956390380859375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.030994415283203125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03218650817871094, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03409385681152344, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03695487976074219, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04100799560546875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04553794860839844, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.05054473876953125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.05412101745605469, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.06198883056640625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07081031799316406, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07605552673339844, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.08130073547363281, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.095367431640625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.11706352233886719, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.18167495727539062, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 4.075407981872559, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.087567329406738, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.088163375854492, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.095196723937988, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.098296165466309, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.103302955627441, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.111289978027344, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.112720489501953, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.121661186218262, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.123687744140625, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.135847091674805, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 4.150509834289551, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -3129,31 +2844,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2589, 0.0133514404296875)
-                                    (0.4032, 0.01430511474609375)
-                                    (0.6325000000000001, 0.015020370483398438)
-                                    (0.8534, 0.01621246337890625)
-                                    (1.0, 0.02384185791015625)
-                                    (1.0, 0.025272369384765625)
-                                    (0.9997999999999999, 0.025987625122070312)
-                                    (0.9997999999999999, 0.026702880859375)
-                                    (0.9997999999999999, 0.02765655517578125)
-                                    (1.0, 0.02956390380859375)
-                                    (1.0, 0.030994415283203125)
-                                    (1.0, 0.03218650817871094)
-                                    (1.0, 0.03409385681152344)
-                                    (1.0, 0.03695487976074219)
-                                    (1.0, 0.04100799560546875)
-                                    (1.0, 0.04553794860839844)
-                                    (1.0, 0.05054473876953125)
-                                    (1.0, 0.05412101745605469)
-                                    (1.0, 0.06198883056640625)
-                                    (1.0, 0.07081031799316406)
-                                    (1.0, 0.07605552673339844)
-                                    (1.0, 0.08130073547363281)
-                                    (1.0, 0.095367431640625)
-                                    (1.0, 0.11706352233886719)
-                                    (1.0, 0.18167495727539062)
+                                                (0.0014, 4.075407981872559)
+                                    (0.0014, 4.087567329406738)
+                                    (0.0014, 4.088163375854492)
+                                    (0.0014, 4.095196723937988)
+                                    (0.0014, 4.098296165466309)
+                                    (0.0014, 4.103302955627441)
+                                    (0.0014, 4.111289978027344)
+                                    (0.0014, 4.112720489501953)
+                                    (0.0014, 4.121661186218262)
+                                    (0.0014, 4.123687744140625)
+                                    (0.0014, 4.135847091674805)
+                                    (0.0014, 4.150509834289551)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3178,31 +2880,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.01621246337890625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.016927719116210938, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.017881393432617188, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.02574920654296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.026714801788330068, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.027668476104736318, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.029087066650390625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.029802322387695312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.031948089599609375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03337860107421875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.034809112548828125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03647804260253906, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03886222839355469, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04459619522094725, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04839897155761719, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.05340576171875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.057697296142578125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.06580352783203125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07605552673339844, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.08082389831542969, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.0858306884765625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.09990930557250975, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.12493133544921875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.19289255142211914, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 48.63696098327637, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.65747690200806, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.740410804748535, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.75587224960327, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.78184795379639, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.787617683410645, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.78849983215332, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.93609285354614, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 48.995912075042725, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.058735370635986, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.07249212265015, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.086916446685784, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -3291,31 +2980,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2589, 0.01621246337890625)
-                                    (0.6325000000000001, 0.016450881958007812)
-                                    (0.4032, 0.016927719116210938)
-                                    (0.8534, 0.017881393432617188)
-                                    (1.0, 0.02574920654296875)
-                                    (1.0, 0.026714801788330068)
-                                    (0.9997999999999999, 0.027668476104736318)
-                                    (0.9997999999999999, 0.029087066650390625)
-                                    (0.9997999999999999, 0.029802322387695312)
-                                    (1.0, 0.031948089599609375)
-                                    (1.0, 0.03337860107421875)
-                                    (1.0, 0.034809112548828125)
-                                    (1.0, 0.03647804260253906)
-                                    (1.0, 0.03886222839355469)
-                                    (1.0, 0.04459619522094725)
-                                    (1.0, 0.04839897155761719)
-                                    (1.0, 0.05340576171875)
-                                    (1.0, 0.057697296142578125)
-                                    (1.0, 0.06580352783203125)
-                                    (1.0, 0.07605552673339844)
-                                    (1.0, 0.08082389831542969)
-                                    (1.0, 0.0858306884765625)
-                                    (1.0, 0.09990930557250975)
-                                    (1.0, 0.12493133544921875)
-                                    (1.0, 0.19289255142211914)
+                                                (0.0014, 48.63696098327637)
+                                    (0.0014, 48.65747690200806)
+                                    (0.0014, 48.740410804748535)
+                                    (0.0014, 48.75587224960327)
+                                    (0.0014, 48.78184795379639)
+                                    (0.0014, 48.787617683410645)
+                                    (0.0014, 48.78849983215332)
+                                    (0.0014, 48.93609285354614)
+                                    (0.0014, 48.995912075042725)
+                                    (0.0014, 49.058735370635986)
+                                    (0.0014, 49.07249212265015)
+                                    (0.0014, 49.086916446685784)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3340,31 +3016,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.4032 , y: 0.020267963409423825, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.2589 , y: 0.020506381988525387, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.020983219146728512, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.026948451995849602, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.029850006103515583, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.03552675247192383, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.0362753868103027, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.03649473190307616, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.03814697265625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04268884658813475, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.044834613800048814, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04554033279418945, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04983901977539062, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.05031108856201171, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.058658123016357415, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.05989313125610347, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.06461381912231445, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07058143615722655, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07725000381469727, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.0863218307495117, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.09441614151000977, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.09729385375976561, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.11039018630981445, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.1394796371459961, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.2050471305847168, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 49.248459339141846, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.281179904937744, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.30238723754883, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.317264556884766, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.37222242355347, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.43398952484131, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.45434331893921, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.47615623474121, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.5310378074646, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.54398155212402, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.549033641815186, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.584033489227295, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -3453,31 +3116,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.4032, 0.020267963409423825)
-                                    (0.2589, 0.020506381988525387)
-                                    (0.6325000000000001, 0.020983219146728512)
-                                    (0.8534, 0.026948451995849602)
-                                    (1.0, 0.029850006103515583)
-                                    (1.0, 0.03552675247192383)
-                                    (0.9997999999999999, 0.0362753868103027)
-                                    (0.9997999999999999, 0.03649473190307616)
-                                    (0.9997999999999999, 0.03814697265625)
-                                    (1.0, 0.04268884658813475)
-                                    (1.0, 0.044834613800048814)
-                                    (1.0, 0.04554033279418945)
-                                    (1.0, 0.04983901977539062)
-                                    (1.0, 0.05031108856201171)
-                                    (1.0, 0.058658123016357415)
-                                    (1.0, 0.05989313125610347)
-                                    (1.0, 0.06461381912231445)
-                                    (1.0, 0.07058143615722655)
-                                    (1.0, 0.07725000381469727)
-                                    (1.0, 0.0863218307495117)
-                                    (1.0, 0.09441614151000977)
-                                    (1.0, 0.09729385375976561)
-                                    (1.0, 0.11039018630981445)
-                                    (1.0, 0.1394796371459961)
-                                    (1.0, 0.2050471305847168)
+                                                (0.0014, 49.248459339141846)
+                                    (0.0014, 49.281179904937744)
+                                    (0.0014, 49.30238723754883)
+                                    (0.0014, 49.317264556884766)
+                                    (0.0014, 49.37222242355347)
+                                    (0.0014, 49.43398952484131)
+                                    (0.0014, 49.45434331893921)
+                                    (0.0014, 49.47615623474121)
+                                    (0.0014, 49.5310378074646)
+                                    (0.0014, 49.54398155212402)
+                                    (0.0014, 49.549033641815186)
+                                    (0.0014, 49.584033489227295)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3502,31 +3152,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2589 , y: 0.03388643264770787, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.8534 , y: 0.03409385681152344, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.4032 , y: 0.03672146797180221, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.6325000000000001 , y: 0.036955595016479555, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.04697823524475186, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.05102205276489262, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.05340695381164561, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.05340790748596211, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 0.9997999999999999 , y: 0.054123163223266796, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.056749105453491704, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.0577011108398441, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.06080055236816441, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.064849853515625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07010245323181219, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.07320427894592373, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.08010888099670413, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.09298586845397973, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.09465408325195329, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.10109066963195812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.11230707168579208, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.11468124389648454, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.12425732612610235, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.12445712089538598, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.17786073684692388, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
-                                                                    { x: 1.0 , y: 0.2622778415679948, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.0014 , y: 49.712013244628956, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.79173660278327, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 49.93562912940984, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 50.27909326553351, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 50.54505395889282, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 50.82055950164799, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 51.39502000808725, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 51.522499322891385, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 51.53843259811601, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 51.676796674728415, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 51.71583700180056, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.0014 , y: 52.60274052622871, label: "SGIA(dimensions=20)" },
                                                             ]
                         },
                                                 ]},
@@ -3615,31 +3252,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2589, 0.03388643264770787)
-                                    (0.8534, 0.03409385681152344)
-                                    (0.4032, 0.03672146797180221)
-                                    (0.6325000000000001, 0.036955595016479555)
-                                    (1.0, 0.04697823524475186)
-                                    (1.0, 0.05102205276489262)
-                                    (0.9997999999999999, 0.05340695381164561)
-                                    (0.9997999999999999, 0.05340790748596211)
-                                    (0.9997999999999999, 0.054123163223266796)
-                                    (1.0, 0.056749105453491704)
-                                    (1.0, 0.0577011108398441)
-                                    (1.0, 0.06080055236816441)
-                                    (1.0, 0.064849853515625)
-                                    (1.0, 0.07010245323181219)
-                                    (1.0, 0.07320427894592373)
-                                    (1.0, 0.08010888099670413)
-                                    (1.0, 0.09298586845397973)
-                                    (1.0, 0.09465408325195329)
-                                    (1.0, 0.10109066963195812)
-                                    (1.0, 0.11230707168579208)
-                                    (1.0, 0.11468124389648454)
-                                    (1.0, 0.12425732612610235)
-                                    (1.0, 0.12445712089538598)
-                                    (1.0, 0.17786073684692388)
-                                    (1.0, 0.2622778415679948)
+                                                (0.0014, 49.712013244628956)
+                                    (0.0014, 49.79173660278327)
+                                    (0.0014, 49.93562912940984)
+                                    (0.0014, 50.27909326553351)
+                                    (0.0014, 50.54505395889282)
+                                    (0.0014, 50.82055950164799)
+                                    (0.0014, 51.39502000808725)
+                                    (0.0014, 51.522499322891385)
+                                    (0.0014, 51.53843259811601)
+                                    (0.0014, 51.676796674728415)
+                                    (0.0014, 51.71583700180056)
+                                    (0.0014, 52.60274052622871)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
