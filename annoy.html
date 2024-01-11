@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>scann</title>
+        <title>annoy</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for scann</h2>
+                                                        <h2>Plots for annoy</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,21 +62,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
                                                             ]
                         },
                                                 ]},
@@ -165,21 +154,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.3089, 76820.16154142018)
-                                    (0.4551, 72253.29888027563)
-                                    (0.6768, 70158.80768780422)
-                                    (0.9106, 63604.02765983258)
-                                    (0.9107, 62898.20646631876)
-                                    (0.9581, 61027.58700966128)
-                                    (0.9795999999999999, 59043.93485085237)
-                                    (0.9874, 58079.98227539604)
-                                    (0.9912000000000001, 55430.35365015594)
-                                    (0.9944000000000001, 55328.716345456225)
-                                    (0.9974000000000001, 52682.33373108083)
-                                    (0.9986, 51719.59505283796)
-                                    (0.9996, 49670.239096195066)
-                                    (0.9999, 48620.02851611857)
-                                    (1.0, 45295.83792306529)
+                                                (0.986, 9415.8805702099)
+                                    (0.9971, 8818.732877360375)
+                                    (0.9996, 7747.845667598286)
+                                    (1.0, 6188.7445018746375)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -204,7 +182,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=10000)" },
                                                             ]
                         },
                                                 ]},
@@ -293,7 +271,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.41057372093200684)
+                                                (1.0, 0.8856704235076904)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -318,7 +296,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=10000)" },
                                                             ]
                         },
                                                 ]},
@@ -407,7 +385,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 5248.0)
+                                                (1.0, 17636.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -544,18 +522,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.024502603947204667 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.024502114151329076 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.024095590331097597 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023852336732226403 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023758189209089453 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02370575013210105 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02366766804053402 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023621292469898518 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023604983987803942 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023587713653775023 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023583474849646572 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.023792487920446487 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.02364292708030206 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.023597349433968733 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.023581681116698873 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 0.023580828681541894 , y: 4718.596718596718, label: "Annoy(n_trees=100, search_k=2000)" },
                                                             ]
                         },
                                                 ]},
@@ -644,18 +615,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.024502603947204667, 63604.02765983258)
-                                    (0.024502114151329076, 62898.20646631876)
-                                    (0.024095590331097597, 61027.58700966128)
-                                    (0.023852336732226403, 59043.93485085237)
-                                    (0.023758189209089453, 58079.98227539604)
-                                    (0.02370575013210105, 55430.35365015594)
-                                    (0.02366766804053402, 55328.716345456225)
-                                    (0.023621292469898518, 52682.33373108083)
-                                    (0.023604983987803942, 51719.59505283796)
-                                    (0.023587713653775023, 49670.239096195066)
-                                    (0.023583474849646572, 48620.02851611857)
-                                    (0.02358082796574708, 45295.83792306529)
+                                                (0.023792487920446487, 9415.8805702099)
+                                    (0.02364292708030206, 8818.732877360375)
+                                    (0.023597349433968733, 7747.845667598286)
+                                    (0.023581681116698873, 6188.7445018746375)
+                                    (0.023580828681541894, 4718.596718596718)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -680,10 +644,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 8.271, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 9.648, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 9.967, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=10000)" },
                                                             ]
                         },
                                                 ]},
@@ -772,10 +733,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.3089, 8.271)
-                                    (0.4551, 9.648)
-                                    (0.6768, 9.967)
-                                    (1.0, 10.0)
+                                                (1.0, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -800,21 +758,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 0.06831539916992187, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.07263336181640624, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.07480172729492188, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.082510498046875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.0834364013671875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.085993896484375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.08888296508789063, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.09035815429687499, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.0946773681640625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.09485128784179687, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.09961593627929688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.10147024536132812, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.10565682983398438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.10793905639648436, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.11586053466796875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 1.8730059146881104, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 1.9998337907791137, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 2.2762456502914428, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 2.8496894636154173, label: "Annoy(n_trees=100, search_k=1000)" },
                                                             ]
                         },
                                                 ]},
@@ -903,21 +850,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.3089, 0.06831539916992187)
-                                    (0.4551, 0.07263336181640624)
-                                    (0.6768, 0.07480172729492188)
-                                    (0.9106, 0.082510498046875)
-                                    (0.9107, 0.0834364013671875)
-                                    (0.9581, 0.085993896484375)
-                                    (0.9795999999999999, 0.08888296508789063)
-                                    (0.9874, 0.09035815429687499)
-                                    (0.9912000000000001, 0.0946773681640625)
-                                    (0.9944000000000001, 0.09485128784179687)
-                                    (0.9974000000000001, 0.09961593627929688)
-                                    (0.9986, 0.10147024536132812)
-                                    (0.9996, 0.10565682983398438)
-                                    (0.9999, 0.10793905639648436)
-                                    (1.0, 0.11586053466796875)
+                                                (0.986, 1.8730059146881104)
+                                    (0.9971, 1.9998337907791137)
+                                    (0.9996, 2.2762456502914428)
+                                    (1.0, 2.8496894636154173)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -942,21 +878,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2644 , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.3868 , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.5737 , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.8230999999999999 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.8234 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.8955 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9435 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9625999999999999 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9737 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9816 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9904 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9945 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9983000000000001 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9994 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.9452 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9842000000000001 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9955 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.9999 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 4718.596718596718, label: "Annoy(n_trees=100, search_k=2000)" },
                                                             ]
                         },
                                                 ]},
@@ -1045,21 +971,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.2644, 76820.16154142018)
-                                    (0.3868, 72253.29888027563)
-                                    (0.5737, 70158.80768780422)
-                                    (0.8230999999999999, 63604.02765983258)
-                                    (0.8234, 62898.20646631876)
-                                    (0.8955, 61027.58700966128)
-                                    (0.9435, 59043.93485085237)
-                                    (0.9625999999999999, 58079.98227539604)
-                                    (0.9737, 55430.35365015594)
-                                    (0.9816, 55328.716345456225)
-                                    (0.9904, 52682.33373108083)
-                                    (0.9945, 51719.59505283796)
-                                    (0.9983000000000001, 49670.239096195066)
-                                    (0.9994, 48620.02851611857)
-                                    (1.0, 45295.83792306529)
+                                                (0.9452, 9415.8805702099)
+                                    (0.9842000000000001, 8818.732877360375)
+                                    (0.9955, 7747.845667598286)
+                                    (0.9999, 6188.7445018746375)
+                                    (1.0, 4718.596718596718)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1084,18 +1000,9 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3601 , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.5256000000000001 , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.7595 , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9592 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9593 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9843999999999999 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9946999999999999 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9968 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9981 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9987999999999999 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9997999999999999 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.9976 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9997999999999999 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 1.0 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
                                                             ]
                         },
                                                 ]},
@@ -1184,18 +1091,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.3601, 76820.16154142018)
-                                    (0.5256000000000001, 72253.29888027563)
-                                    (0.7595, 70158.80768780422)
-                                    (0.9592, 63604.02765983258)
-                                    (0.9593, 62898.20646631876)
-                                    (0.9843999999999999, 61027.58700966128)
-                                    (0.9946999999999999, 59043.93485085237)
-                                    (0.9968, 58079.98227539604)
-                                    (0.9981, 55430.35365015594)
-                                    (0.9987999999999999, 55328.716345456225)
-                                    (0.9997999999999999, 52682.33373108083)
-                                    (1.0, 51719.59505283796)
+                                                (0.9976, 9415.8805702099)
+                                    (0.9997999999999999, 8818.732877360375)
+                                    (1.0, 7747.845667598286)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1220,19 +1118,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 0.012636184692382812, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.013589859008789062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.013828277587890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.0152587890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.015735626220703125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.016450881958007812, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.016689300537109375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.017404556274414062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.018358230590820312, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.018596649169921875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.019311904907226562, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.02002716064453125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.0209808349609375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 0.10585784912109375, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 0.11229515075683594, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.12755393981933594, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.15997886657714844, label: "Annoy(n_trees=100, search_k=1000)" },
                                                             ]
                         },
                                                 ]},
@@ -1321,19 +1210,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.3089, 0.012636184692382812)
-                                    (0.4551, 0.013589859008789062)
-                                    (0.6768, 0.013828277587890625)
-                                    (0.9107, 0.0152587890625)
-                                    (0.9581, 0.015735626220703125)
-                                    (0.9795999999999999, 0.016450881958007812)
-                                    (0.9874, 0.016689300537109375)
-                                    (0.9944000000000001, 0.017404556274414062)
-                                    (0.9974000000000001, 0.018358230590820312)
-                                    (0.9986, 0.018596649169921875)
-                                    (0.9996, 0.019311904907226562)
-                                    (0.9999, 0.02002716064453125)
-                                    (1.0, 0.0209808349609375)
+                                                (0.986, 0.10585784912109375)
+                                    (0.9971, 0.11229515075683594)
+                                    (0.9996, 0.12755393981933594)
+                                    (1.0, 0.15997886657714844)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1358,17 +1238,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.6768 , y: 0.015735626220703125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.017642974853515625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.018358230590820312, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.018608570098876943, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.019073486328125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.019788742065429688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.020742416381835938, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.021219253540039062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.022649765014648438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.023603439331054688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.026476383209228505, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 0.12230873107910156, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 0.12922286987304688, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.14734268188476562, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.18001794815063477, label: "Annoy(n_trees=100, search_k=1000)" },
                                                             ]
                         },
                                                 ]},
@@ -1457,17 +1330,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.6768, 0.015735626220703125)
-                                    (0.9106, 0.017642974853515625)
-                                    (0.9107, 0.018358230590820312)
-                                    (0.9581, 0.018608570098876943)
-                                    (0.9795999999999999, 0.019073486328125)
-                                    (0.9874, 0.019788742065429688)
-                                    (0.9912000000000001, 0.020742416381835938)
-                                    (0.9974000000000001, 0.021219253540039062)
-                                    (0.9986, 0.022649765014648438)
-                                    (0.9999, 0.023603439331054688)
-                                    (1.0, 0.026476383209228505)
+                                                (0.986, 0.12230873107910156)
+                                    (0.9971, 0.12922286987304688)
+                                    (0.9996, 0.14734268188476562)
+                                    (1.0, 0.18001794815063477)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1492,13 +1358,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.4551 , y: 0.020515918731689443, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.022912025451660135, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.025997161865234368, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.026464462280273438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.026988983154296833, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.03218650817871094, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.03362894058227538, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 0.1337575912475586, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 0.14045000076293943, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.161895751953125, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.19743442535400388, label: "Annoy(n_trees=100, search_k=1000)" },
                                                             ]
                         },
                                                 ]},
@@ -1587,13 +1450,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.4551, 0.020515918731689443)
-                                    (0.6768, 0.022912025451660135)
-                                    (0.9107, 0.025997161865234368)
-                                    (0.9795999999999999, 0.026464462280273438)
-                                    (0.9974000000000001, 0.026988983154296833)
-                                    (0.9986, 0.03218650817871094)
-                                    (1.0, 0.03362894058227538)
+                                                (0.986, 0.1337575912475586)
+                                    (0.9971, 0.14045000076293943)
+                                    (0.9996, 0.161895751953125)
+                                    (1.0, 0.19743442535400388)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1618,13 +1478,9 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 0.028890609741214716, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.029116868972781002, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.036273241043093846, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.04270768165588656, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.0441358089447047, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.046990394592287134, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.050817728042605655, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.9971 , y: 0.19053077697754214, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.21222400665283486, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.2582330703735375, label: "Annoy(n_trees=100, search_k=1000)" },
                                                             ]
                         },
                                                 ]},
@@ -1713,13 +1569,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.3089, 0.028890609741214716)
-                                    (0.4551, 0.029116868972781002)
-                                    (0.9795999999999999, 0.036273241043093846)
-                                    (0.9912000000000001, 0.04270768165588656)
-                                    (0.9974000000000001, 0.0441358089447047)
-                                    (0.9999, 0.046990394592287134)
-                                    (1.0, 0.050817728042605655)
+                                                (0.9971, 0.19053077697754214)
+                                    (0.9996, 0.21222400665283486)
+                                    (1.0, 0.2582330703735375)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1731,7 +1583,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for scann</h2>
+                                                        <h2>Scatterplots for annoy</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1746,27 +1598,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 43972.36462756198, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 42202.16127019902, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 36743.793254489705, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 34359.8263291554, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 30068.41969431939, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 26002.47978971383, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 4718.596718596718, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 3236.1858673645743, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 1585.2711244555514, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 732.6186423433014, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 367.4879289315489, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 156.87144561295767, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 80.69875981883999, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 41.395912705525824, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -1855,27 +1698,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.3089, 76820.16154142018)
-                                    (0.4551, 72253.29888027563)
-                                    (0.6768, 70158.80768780422)
-                                    (0.9106, 63604.02765983258)
-                                    (0.9107, 62898.20646631876)
-                                    (0.9581, 61027.58700966128)
-                                    (0.9795999999999999, 59043.93485085237)
-                                    (0.9874, 58079.98227539604)
-                                    (0.9912000000000001, 55430.35365015594)
-                                    (0.9944000000000001, 55328.716345456225)
-                                    (0.9974000000000001, 52682.33373108083)
-                                    (0.9986, 51719.59505283796)
-                                    (0.9996, 49670.239096195066)
-                                    (0.9999, 48620.02851611857)
-                                    (1.0, 45295.83792306529)
-                                    (1.0, 43972.36462756198)
-                                    (1.0, 42202.16127019902)
-                                    (1.0, 36743.793254489705)
-                                    (1.0, 34359.8263291554)
-                                    (1.0, 30068.41969431939)
-                                    (1.0, 26002.47978971383)
+                                                (0.986, 9415.8805702099)
+                                    (0.9971, 8818.732877360375)
+                                    (0.9996, 7747.845667598286)
+                                    (1.0, 6188.7445018746375)
+                                    (1.0, 4718.596718596718)
+                                    (1.0, 3236.1858673645743)
+                                    (1.0, 1585.2711244555514)
+                                    (1.0, 732.6186423433014)
+                                    (1.0, 367.4879289315489)
+                                    (1.0, 156.87144561295767)
+                                    (1.0, 80.69875981883999)
+                                    (1.0, 41.395912705525824)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1900,27 +1734,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.3089 , y: 0.41057372093200684, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 0.9996 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.9971 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.986 , y: 0.8856704235076904, label: "Annoy(n_trees=100, search_k=100)" },
                                                             ]
                         },
                                                 ]},
@@ -2009,27 +1834,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.41057372093200684)
-                                    (1.0, 0.41057372093200684)
-                                    (1.0, 0.41057372093200684)
-                                    (1.0, 0.41057372093200684)
-                                    (1.0, 0.41057372093200684)
-                                    (1.0, 0.41057372093200684)
-                                    (1.0, 0.41057372093200684)
-                                    (0.9999, 0.41057372093200684)
-                                    (0.9996, 0.41057372093200684)
-                                    (0.9986, 0.41057372093200684)
-                                    (0.9974000000000001, 0.41057372093200684)
-                                    (0.9944000000000001, 0.41057372093200684)
-                                    (0.9912000000000001, 0.41057372093200684)
-                                    (0.9874, 0.41057372093200684)
-                                    (0.9795999999999999, 0.41057372093200684)
-                                    (0.9581, 0.41057372093200684)
-                                    (0.9107, 0.41057372093200684)
-                                    (0.9106, 0.41057372093200684)
-                                    (0.6768, 0.41057372093200684)
-                                    (0.4551, 0.41057372093200684)
-                                    (0.3089, 0.41057372093200684)
+                                                (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (1.0, 0.8856704235076904)
+                                    (0.9996, 0.8856704235076904)
+                                    (0.9971, 0.8856704235076904)
+                                    (0.986, 0.8856704235076904)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2054,27 +1870,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.3089 , y: 5248.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 17636.0, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 0.9996 , y: 17636.0, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.9971 , y: 17636.0, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.986 , y: 17636.0, label: "Annoy(n_trees=100, search_k=100)" },
                                                             ]
                         },
                                                 ]},
@@ -2163,27 +1970,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (1.0, 5248.0)
-                                    (0.9999, 5248.0)
-                                    (0.9996, 5248.0)
-                                    (0.9986, 5248.0)
-                                    (0.9974000000000001, 5248.0)
-                                    (0.9944000000000001, 5248.0)
-                                    (0.9912000000000001, 5248.0)
-                                    (0.9874, 5248.0)
-                                    (0.9795999999999999, 5248.0)
-                                    (0.9581, 5248.0)
-                                    (0.9107, 5248.0)
-                                    (0.9106, 5248.0)
-                                    (0.6768, 5248.0)
-                                    (0.4551, 5248.0)
-                                    (0.3089, 5248.0)
+                                                (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (1.0, 17636.0)
+                                    (0.9996, 17636.0)
+                                    (0.9971, 17636.0)
+                                    (0.986, 17636.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2320,27 +2118,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: inf , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: inf , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: inf , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.024502603947204667 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.024502114151329076 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.024095590331097597 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023852336732226403 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023758189209089453 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02370575013210105 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02366766804053402 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023621292469898518 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023604983987803942 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023587713653775023 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.023583474849646572 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 43972.36462756198, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 42202.16127019902, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 36743.793254489705, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 34359.8263291554, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 30068.41969431939, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.02358082796574708 , y: 26002.47978971383, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.023792487920446487 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.02364292708030206 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.023597349433968733 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.023581681116698873 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 0.023580828681541894 , y: 4718.596718596718, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 0.023580828681541894 , y: 3236.1858673645743, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 0.023580828681541894 , y: 1585.2711244555514, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 0.023580828681541894 , y: 732.6186423433014, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 0.023580828681541894 , y: 367.4879289315489, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 0.023580828681541894 , y: 156.87144561295767, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 0.023580828681541894 , y: 80.69875981883999, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 0.023580828681541894 , y: 41.395912705525824, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -2429,27 +2218,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (inf, 76820.16154142018)
-                                    (inf, 72253.29888027563)
-                                    (inf, 70158.80768780422)
-                                    (0.024502603947204667, 63604.02765983258)
-                                    (0.024502114151329076, 62898.20646631876)
-                                    (0.024095590331097597, 61027.58700966128)
-                                    (0.023852336732226403, 59043.93485085237)
-                                    (0.023758189209089453, 58079.98227539604)
-                                    (0.02370575013210105, 55430.35365015594)
-                                    (0.02366766804053402, 55328.716345456225)
-                                    (0.023621292469898518, 52682.33373108083)
-                                    (0.023604983987803942, 51719.59505283796)
-                                    (0.023587713653775023, 49670.239096195066)
-                                    (0.023583474849646572, 48620.02851611857)
-                                    (0.02358082796574708, 45295.83792306529)
-                                    (0.02358082796574708, 43972.36462756198)
-                                    (0.02358082796574708, 42202.16127019902)
-                                    (0.02358082796574708, 36743.793254489705)
-                                    (0.02358082796574708, 34359.8263291554)
-                                    (0.02358082796574708, 30068.41969431939)
-                                    (0.02358082796574708, 26002.47978971383)
+                                                (0.023792487920446487, 9415.8805702099)
+                                    (0.02364292708030206, 8818.732877360375)
+                                    (0.023597349433968733, 7747.845667598286)
+                                    (0.023581681116698873, 6188.7445018746375)
+                                    (0.023580828681541894, 4718.596718596718)
+                                    (0.023580828681541894, 3236.1858673645743)
+                                    (0.023580828681541894, 1585.2711244555514)
+                                    (0.023580828681541894, 732.6186423433014)
+                                    (0.023580828681541894, 367.4879289315489)
+                                    (0.023580828681541894, 156.87144561295767)
+                                    (0.023580828681541894, 80.69875981883999)
+                                    (0.023580828681541894, 41.395912705525824)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2474,27 +2254,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 8.271, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 9.648, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 9.967, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 10.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 0.9996 , y: 10.0, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.9971 , y: 10.0, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.986 , y: 10.0, label: "Annoy(n_trees=100, search_k=100)" },
                                                             ]
                         },
                                                 ]},
@@ -2583,9 +2354,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.3089, 8.271)
-                                    (0.4551, 9.648)
-                                    (0.6768, 9.967)
+                                                (1.0, 10.0)
                                     (1.0, 10.0)
                                     (1.0, 10.0)
                                     (1.0, 10.0)
@@ -2593,17 +2362,10 @@
                                     (1.0, 10.0)
                                     (1.0, 10.0)
                                     (1.0, 10.0)
-                                    (0.9999, 10.0)
+                                    (1.0, 10.0)
                                     (0.9996, 10.0)
-                                    (0.9986, 10.0)
-                                    (0.9974000000000001, 10.0)
-                                    (0.9944000000000001, 10.0)
-                                    (0.9912000000000001, 10.0)
-                                    (0.9874, 10.0)
-                                    (0.9795999999999999, 10.0)
-                                    (0.9581, 10.0)
-                                    (0.9107, 10.0)
-                                    (0.9106, 10.0)
+                                    (0.9971, 10.0)
+                                    (0.986, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2628,27 +2390,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 0.06831539916992187, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.07263336181640624, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.07480172729492188, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.082510498046875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.0834364013671875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.085993896484375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.08888296508789063, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.09035815429687499, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.0946773681640625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.09485128784179687, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.09961593627929688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.10147024536132812, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.10565682983398438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.10793905639648436, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.11586053466796875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.11934768676757813, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.12435382080078125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.14282684326171877, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.15273651123046875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.1745352783203125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.20182690429687503, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 1.8730059146881104, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 1.9998337907791137, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 2.2762456502914428, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 2.8496894636154173, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 3.7375518722534182, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 5.44962518310547, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 11.124910892486572, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 24.072551503181458, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 47.99069196987153, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 112.42326435565948, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 218.54115279579162, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 426.03239903068544, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -2737,27 +2490,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.3089, 0.06831539916992187)
-                                    (0.4551, 0.07263336181640624)
-                                    (0.6768, 0.07480172729492188)
-                                    (0.9106, 0.082510498046875)
-                                    (0.9107, 0.0834364013671875)
-                                    (0.9581, 0.085993896484375)
-                                    (0.9795999999999999, 0.08888296508789063)
-                                    (0.9874, 0.09035815429687499)
-                                    (0.9912000000000001, 0.0946773681640625)
-                                    (0.9944000000000001, 0.09485128784179687)
-                                    (0.9974000000000001, 0.09961593627929688)
-                                    (0.9986, 0.10147024536132812)
-                                    (0.9996, 0.10565682983398438)
-                                    (0.9999, 0.10793905639648436)
-                                    (1.0, 0.11586053466796875)
-                                    (1.0, 0.11934768676757813)
-                                    (1.0, 0.12435382080078125)
-                                    (1.0, 0.14282684326171877)
-                                    (1.0, 0.15273651123046875)
-                                    (1.0, 0.1745352783203125)
-                                    (1.0, 0.20182690429687503)
+                                                (0.986, 1.8730059146881104)
+                                    (0.9971, 1.9998337907791137)
+                                    (0.9996, 2.2762456502914428)
+                                    (1.0, 2.8496894636154173)
+                                    (1.0, 3.7375518722534182)
+                                    (1.0, 5.44962518310547)
+                                    (1.0, 11.124910892486572)
+                                    (1.0, 24.072551503181458)
+                                    (1.0, 47.99069196987153)
+                                    (1.0, 112.42326435565948)
+                                    (1.0, 218.54115279579162)
+                                    (1.0, 426.03239903068544)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2782,27 +2526,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.2644 , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.3868 , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.5737 , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.8230999999999999 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.8234 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.8955 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9435 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9625999999999999 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9737 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9816 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9904 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9945 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9983000000000001 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9994 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 43972.36462756198, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 42202.16127019902, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 36743.793254489705, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 34359.8263291554, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 30068.41969431939, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 26002.47978971383, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.9452 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9842000000000001 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9955 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 0.9999 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 4718.596718596718, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 3236.1858673645743, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 1585.2711244555514, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 732.6186423433014, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 367.4879289315489, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 156.87144561295767, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 80.69875981883999, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 41.395912705525824, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -2891,27 +2626,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.2644, 76820.16154142018)
-                                    (0.3868, 72253.29888027563)
-                                    (0.5737, 70158.80768780422)
-                                    (0.8230999999999999, 63604.02765983258)
-                                    (0.8234, 62898.20646631876)
-                                    (0.8955, 61027.58700966128)
-                                    (0.9435, 59043.93485085237)
-                                    (0.9625999999999999, 58079.98227539604)
-                                    (0.9737, 55430.35365015594)
-                                    (0.9816, 55328.716345456225)
-                                    (0.9904, 52682.33373108083)
-                                    (0.9945, 51719.59505283796)
-                                    (0.9983000000000001, 49670.239096195066)
-                                    (0.9994, 48620.02851611857)
-                                    (1.0, 45295.83792306529)
-                                    (1.0, 43972.36462756198)
-                                    (1.0, 42202.16127019902)
-                                    (1.0, 36743.793254489705)
-                                    (1.0, 34359.8263291554)
-                                    (1.0, 30068.41969431939)
-                                    (1.0, 26002.47978971383)
+                                                (0.9452, 9415.8805702099)
+                                    (0.9842000000000001, 8818.732877360375)
+                                    (0.9955, 7747.845667598286)
+                                    (0.9999, 6188.7445018746375)
+                                    (1.0, 4718.596718596718)
+                                    (1.0, 3236.1858673645743)
+                                    (1.0, 1585.2711244555514)
+                                    (1.0, 732.6186423433014)
+                                    (1.0, 367.4879289315489)
+                                    (1.0, 156.87144561295767)
+                                    (1.0, 80.69875981883999)
+                                    (1.0, 41.395912705525824)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2936,27 +2662,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3601 , y: 76820.16154142018, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.5256000000000001 , y: 72253.29888027563, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.7595 , y: 70158.80768780422, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9592 , y: 63604.02765983258, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9593 , y: 62898.20646631876, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9843999999999999 , y: 61027.58700966128, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9946999999999999 , y: 59043.93485085237, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9968 , y: 58079.98227539604, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9981 , y: 55430.35365015594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9987999999999999 , y: 55328.716345456225, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9997999999999999 , y: 52682.33373108083, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 51719.59505283796, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 49670.239096195066, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 48620.02851611857, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 45295.83792306529, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 43972.36462756198, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 42202.16127019902, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 36743.793254489705, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 34359.8263291554, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 30068.41969431939, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 26002.47978971383, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.9976 , y: 9415.8805702099, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9997999999999999 , y: 8818.732877360375, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 1.0 , y: 7747.845667598286, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 6188.7445018746375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 4718.596718596718, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 3236.1858673645743, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 1585.2711244555514, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 732.6186423433014, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 367.4879289315489, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 156.87144561295767, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 80.69875981883999, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 41.395912705525824, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -3045,27 +2762,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.3601, 76820.16154142018)
-                                    (0.5256000000000001, 72253.29888027563)
-                                    (0.7595, 70158.80768780422)
-                                    (0.9592, 63604.02765983258)
-                                    (0.9593, 62898.20646631876)
-                                    (0.9843999999999999, 61027.58700966128)
-                                    (0.9946999999999999, 59043.93485085237)
-                                    (0.9968, 58079.98227539604)
-                                    (0.9981, 55430.35365015594)
-                                    (0.9987999999999999, 55328.716345456225)
-                                    (0.9997999999999999, 52682.33373108083)
-                                    (1.0, 51719.59505283796)
-                                    (1.0, 49670.239096195066)
-                                    (1.0, 48620.02851611857)
-                                    (1.0, 45295.83792306529)
-                                    (1.0, 43972.36462756198)
-                                    (1.0, 42202.16127019902)
-                                    (1.0, 36743.793254489705)
-                                    (1.0, 34359.8263291554)
-                                    (1.0, 30068.41969431939)
-                                    (1.0, 26002.47978971383)
+                                                (0.9976, 9415.8805702099)
+                                    (0.9997999999999999, 8818.732877360375)
+                                    (1.0, 7747.845667598286)
+                                    (1.0, 6188.7445018746375)
+                                    (1.0, 4718.596718596718)
+                                    (1.0, 3236.1858673645743)
+                                    (1.0, 1585.2711244555514)
+                                    (1.0, 732.6186423433014)
+                                    (1.0, 367.4879289315489)
+                                    (1.0, 156.87144561295767)
+                                    (1.0, 80.69875981883999)
+                                    (1.0, 41.395912705525824)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3090,27 +2798,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 0.012636184692382812, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.013589859008789062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.013828277587890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.0152587890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.0152587890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.015735626220703125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.016450881958007812, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.016689300537109375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.017404556274414062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.017404556274414062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.018358230590820312, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.018596649169921875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.019311904907226562, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.02002716064453125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.0209808349609375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.02193450927734375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.023126602172851562, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.026464462280273438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.028371810913085938, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.03266334533691406, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.037670135498046875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 0.10585784912109375, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 0.11229515075683594, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.12755393981933594, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.15997886657714844, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.209808349609375, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 0.3085136413574219, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 0.6265640258789062, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 1.3608932495117188, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 2.704739570617676, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 6.362557411193848, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 12.366175651550293, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 24.09219741821289, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -3199,27 +2898,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.3089, 0.012636184692382812)
-                                    (0.4551, 0.013589859008789062)
-                                    (0.6768, 0.013828277587890625)
-                                    (0.9107, 0.0152587890625)
-                                    (0.9106, 0.0152587890625)
-                                    (0.9581, 0.015735626220703125)
-                                    (0.9795999999999999, 0.016450881958007812)
-                                    (0.9874, 0.016689300537109375)
-                                    (0.9944000000000001, 0.017404556274414062)
-                                    (0.9912000000000001, 0.017404556274414062)
-                                    (0.9974000000000001, 0.018358230590820312)
-                                    (0.9986, 0.018596649169921875)
-                                    (0.9996, 0.019311904907226562)
-                                    (0.9999, 0.02002716064453125)
-                                    (1.0, 0.0209808349609375)
-                                    (1.0, 0.02193450927734375)
-                                    (1.0, 0.023126602172851562)
-                                    (1.0, 0.026464462280273438)
-                                    (1.0, 0.028371810913085938)
-                                    (1.0, 0.03266334533691406)
-                                    (1.0, 0.037670135498046875)
+                                                (0.986, 0.10585784912109375)
+                                    (0.9971, 0.11229515075683594)
+                                    (0.9996, 0.12755393981933594)
+                                    (1.0, 0.15997886657714844)
+                                    (1.0, 0.209808349609375)
+                                    (1.0, 0.3085136413574219)
+                                    (1.0, 0.6265640258789062)
+                                    (1.0, 1.3608932495117188)
+                                    (1.0, 2.704739570617676)
+                                    (1.0, 6.362557411193848)
+                                    (1.0, 12.366175651550293)
+                                    (1.0, 24.09219741821289)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3244,27 +2934,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.6768 , y: 0.015735626220703125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.3089 , y: 0.015747547149658193, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.01621246337890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.017642974853515625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.018358230590820312, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.018608570098876943, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.019073486328125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.019788742065429688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.020742416381835938, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.021219253540039062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.021219253540039062, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.022649765014648438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.023603439331054688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.023603439331054688, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.026476383209228505, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.026702880859375, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.030040740966796875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.030517578125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.033390522003173814, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.036013126373291, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.04149675369262694, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 0.12230873107910156, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 0.12922286987304688, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.14734268188476562, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.18001794815063477, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.23343563079833982, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 0.34096240997314453, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 0.6930947303771973, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 1.432478427886963, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 2.886343002319336, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 6.572377681732178, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 12.74338960647583, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 24.74581003189087, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -3353,27 +3034,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.6768, 0.015735626220703125)
-                                    (0.3089, 0.015747547149658193)
-                                    (0.4551, 0.01621246337890625)
-                                    (0.9106, 0.017642974853515625)
-                                    (0.9107, 0.018358230590820312)
-                                    (0.9581, 0.018608570098876943)
-                                    (0.9795999999999999, 0.019073486328125)
-                                    (0.9874, 0.019788742065429688)
-                                    (0.9912000000000001, 0.020742416381835938)
-                                    (0.9974000000000001, 0.021219253540039062)
-                                    (0.9944000000000001, 0.021219253540039062)
-                                    (0.9986, 0.022649765014648438)
-                                    (0.9999, 0.023603439331054688)
-                                    (0.9996, 0.023603439331054688)
-                                    (1.0, 0.026476383209228505)
-                                    (1.0, 0.026702880859375)
-                                    (1.0, 0.030040740966796875)
-                                    (1.0, 0.030517578125)
-                                    (1.0, 0.033390522003173814)
-                                    (1.0, 0.036013126373291)
-                                    (1.0, 0.04149675369262694)
+                                                (0.986, 0.12230873107910156)
+                                    (0.9971, 0.12922286987304688)
+                                    (0.9996, 0.14734268188476562)
+                                    (1.0, 0.18001794815063477)
+                                    (1.0, 0.23343563079833982)
+                                    (1.0, 0.34096240997314453)
+                                    (1.0, 0.6930947303771973)
+                                    (1.0, 1.432478427886963)
+                                    (1.0, 2.886343002319336)
+                                    (1.0, 6.572377681732178)
+                                    (1.0, 12.74338960647583)
+                                    (1.0, 24.74581003189087)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3398,27 +3070,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.4551 , y: 0.020515918731689443, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.022912025451660135, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.3089 , y: 0.023369789123535153, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.025997161865234368, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.026464462280273438, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.026988983154296833, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.027194023132324205, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.027666091918945306, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.029087066650390625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.029573440551757806, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.030045509338378903, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.03218650817871094, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.03362894058227538, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.0338602066040039, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.034334659576416016, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.03482103347778319, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.03815412521362304, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.04148721694946289, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.04172563552856445, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.04673004150390625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.05388736724853515, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.986 , y: 0.1337575912475586, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9971 , y: 0.14045000076293943, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.9996 , y: 0.161895751953125, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.19743442535400388, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.2472543716430664, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 0.3681707382202148, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 0.7274389266967773, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 1.5189671516418457, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 2.9865288734436035, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 6.7545247077941895, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 13.037540912628172, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 25.714652538299557, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -3507,27 +3170,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.4551, 0.020515918731689443)
-                                    (0.6768, 0.022912025451660135)
-                                    (0.3089, 0.023369789123535153)
-                                    (0.9107, 0.025997161865234368)
-                                    (0.9795999999999999, 0.026464462280273438)
-                                    (0.9974000000000001, 0.026988983154296833)
-                                    (0.9944000000000001, 0.027194023132324205)
-                                    (0.9912000000000001, 0.027666091918945306)
-                                    (0.9581, 0.029087066650390625)
-                                    (0.9106, 0.029573440551757806)
-                                    (0.9874, 0.030045509338378903)
-                                    (0.9986, 0.03218650817871094)
-                                    (1.0, 0.03362894058227538)
-                                    (0.9996, 0.0338602066040039)
-                                    (0.9999, 0.034334659576416016)
-                                    (1.0, 0.03482103347778319)
-                                    (1.0, 0.03815412521362304)
-                                    (1.0, 0.04148721694946289)
-                                    (1.0, 0.04172563552856445)
-                                    (1.0, 0.04673004150390625)
-                                    (1.0, 0.05388736724853515)
+                                                (0.986, 0.1337575912475586)
+                                    (0.9971, 0.14045000076293943)
+                                    (0.9996, 0.161895751953125)
+                                    (1.0, 0.19743442535400388)
+                                    (1.0, 0.2472543716430664)
+                                    (1.0, 0.3681707382202148)
+                                    (1.0, 0.7274389266967773)
+                                    (1.0, 1.5189671516418457)
+                                    (1.0, 2.9865288734436035)
+                                    (1.0, 6.7545247077941895)
+                                    (1.0, 13.037540912628172)
+                                    (1.0, 25.714652538299557)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3552,27 +3206,18 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.3089 , y: 0.028890609741214716, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.4551 , y: 0.029116868972781002, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9795999999999999 , y: 0.036273241043093846, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9107 , y: 0.03793740272522232, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.6768 , y: 0.04126667976379577, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9106 , y: 0.04174780845642311, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9912000000000001 , y: 0.04270768165588656, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9581 , y: 0.04294371604919689, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9974000000000001 , y: 0.0441358089447047, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9999 , y: 0.046990394592287134, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9996 , y: 0.04770874977112042, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.050817728042605655, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9986 , y: 0.05178546905518016, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9944000000000001 , y: 0.05271744728088622, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.05319714546203882, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 0.9874 , y: 0.05390501022339069, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.05939602851867944, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.0641705989837679, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.07965636253357154, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.08038449287414888, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
-                                                                    { x: 1.0 , y: 0.08466339111328348, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
+                                                                    { x: 0.9971 , y: 0.19053077697754214, label: "Annoy(n_trees=100, search_k=200)" },
+                                                                    { x: 0.986 , y: 0.1969552040100117, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 0.9996 , y: 0.21222400665283486, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 0.2582330703735375, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.29734849929809937, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 0.40012311935425315, label: "Annoy(n_trees=100, search_k=4000)" },
+                                                                    { x: 1.0 , y: 0.8513982295989995, label: "Annoy(n_trees=100, search_k=10000)" },
+                                                                    { x: 1.0 , y: 1.7290294170379656, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 3.1131474971771347, label: "Annoy(n_trees=100, search_k=40000)" },
+                                                                    { x: 1.0 , y: 7.233125209808369, label: "Annoy(n_trees=100, search_k=100000)" },
+                                                                    { x: 1.0 , y: 15.019650697708238, label: "Annoy(n_trees=100, search_k=200000)" },
+                                                                    { x: 1.0 , y: 27.433425426484163, label: "Annoy(n_trees=100, search_k=400000)" },
                                                             ]
                         },
                                                 ]},
@@ -3661,27 +3306,18 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.3089, 0.028890609741214716)
-                                    (0.4551, 0.029116868972781002)
-                                    (0.9795999999999999, 0.036273241043093846)
-                                    (0.9107, 0.03793740272522232)
-                                    (0.6768, 0.04126667976379577)
-                                    (0.9106, 0.04174780845642311)
-                                    (0.9912000000000001, 0.04270768165588656)
-                                    (0.9581, 0.04294371604919689)
-                                    (0.9974000000000001, 0.0441358089447047)
-                                    (0.9999, 0.046990394592287134)
-                                    (0.9996, 0.04770874977112042)
-                                    (1.0, 0.050817728042605655)
-                                    (0.9986, 0.05178546905518016)
-                                    (0.9944000000000001, 0.05271744728088622)
-                                    (1.0, 0.05319714546203882)
-                                    (0.9874, 0.05390501022339069)
-                                    (1.0, 0.05939602851867944)
-                                    (1.0, 0.0641705989837679)
-                                    (1.0, 0.07965636253357154)
-                                    (1.0, 0.08038449287414888)
-                                    (1.0, 0.08466339111328348)
+                                                (0.9971, 0.19053077697754214)
+                                    (0.986, 0.1969552040100117)
+                                    (0.9996, 0.21222400665283486)
+                                    (1.0, 0.2582330703735375)
+                                    (1.0, 0.29734849929809937)
+                                    (1.0, 0.40012311935425315)
+                                    (1.0, 0.8513982295989995)
+                                    (1.0, 1.7290294170379656)
+                                    (1.0, 3.1131474971771347)
+                                    (1.0, 7.233125209808369)
+                                    (1.0, 15.019650697708238)
+                                    (1.0, 27.433425426484163)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
