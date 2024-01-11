@@ -1,7 +1,7 @@
 Benchmarking nearest neighbors
 ==============================
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/erikbern/ann-benchmarks/benchmarks.yml?branch=main&style=flat-square)](https://github.com/erikbern/ann-benchmarks/actions/workflows/benchmarks.yml)
+[![ANN benchmarks](https://github.com/Nishaanthan/ann-benchmarks/actions/workflows/benchmarks.yml/badge.svg)](https://github.com/Nishaanthan/ann-benchmarks/actions/workflows/benchmarks.yml)
 
 Doing fast searching of nearest neighbors in high dimensional spaces is an increasingly important problem with notably few empirical attempts at comparing approaches in an objective way, despite a clear need for such to drive optimization forward.
 
