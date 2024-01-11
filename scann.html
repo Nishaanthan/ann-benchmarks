@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>random-xs-20-angular (k = 10)</title>
+        <title>scann</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for random-xs-20-angular (k = 10)</h2>
+                                                        <h2>Plots for scann</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -57,22 +57,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -176,13 +164,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9907999999999999, 2504.0471400170745)
-                                    (0.9976, 2393.2496308249206)
-                                    (0.9996, 2173.0838975481265)
-                                    (1.0, 1977.0725232291538)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.32189999999999996, 76004.42149134728)
                                     (0.4551, 72519.39070145409)
                                     (0.6795, 68115.8893075224)
@@ -198,7 +179,7 @@
                                     (0.9997999999999999, 49914.36391764846)
                                     (1.0, 47634.39785581247)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Queries per second (1/s) tradeoff - up and to the right is better }
@@ -216,19 +197,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 1.0 , y: 0.4140613079071045, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                             ]
@@ -319,13 +291,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 3.4957456588745117)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (1.0, 0.4140613079071045)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Build time (s) tradeoff - down and to the right is better }
@@ -343,19 +311,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 1.0 , y: 5120.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                             ]
@@ -446,13 +405,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 58524.0)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (1.0, 5120.0)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Index size (kB) tradeoff - down and to the right is better }
@@ -470,18 +425,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                             ]
                         },
@@ -572,10 +519,7 @@
             ]
                                 \addplot coordinates {
                                         };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
-                                        };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Distance computations tradeoff - down and to the right is better }
@@ -593,24 +537,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.02375130433668527 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.023630199448841923 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.02359199956548582 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.02358165514842772 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 0.023580933238561006 , y: 1776.53609042142, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 0.023580828681541894 , y: 1485.1068108846118, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.024466092305208256 , y: 63358.066465256794, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.024465735772484988 , y: 63321.71865092545, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -711,15 +641,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.02375130433668527, 2504.0471400170745)
-                                    (0.023630199448841923, 2393.2496308249206)
-                                    (0.02359199956548582, 2173.0838975481265)
-                                    (0.02358165514842772, 1977.0725232291538)
-                                    (0.023580933238561006, 1776.53609042142)
-                                    (0.023580828681541894, 1485.1068108846118)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.024466092305208256, 63358.066465256794)
                                     (0.024465735772484988, 63321.71865092545)
                                     (0.024055798262010004, 59946.03247198719)
@@ -732,7 +653,7 @@
                                     (0.023584543925307407, 49914.36391764846)
                                     (0.02358082796574708, 47634.39785581247)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Relative Error-Queries per second (1/s) tradeoff - up and to the left is better }
@@ -750,19 +671,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.2572 , y: 6.441, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                                     { x: 0.32189999999999996 , y: 8.545, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -859,10 +771,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 10.0)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.2572, 6.441)
                                     (0.32189999999999996, 8.545)
                                     (0.4039, 8.689)
@@ -871,7 +779,7 @@
                                     (0.6795, 9.968)
                                     (1.0, 10.0)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Candidates generated tradeoff - down and to the right is better }
@@ -889,22 +797,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 23.37176447868347, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 24.453780017852786, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 26.931311794281008, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 29.60134204101563, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 0.067364501953125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 0.070601806640625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -1008,13 +904,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9907999999999999, 23.37176447868347)
-                                    (0.9976, 24.453780017852786)
-                                    (0.9996, 26.931311794281008)
-                                    (1.0, 29.60134204101563)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.32189999999999996, 0.067364501953125)
                                     (0.4551, 0.070601806640625)
                                     (0.6795, 0.07516601562500001)
@@ -1030,7 +919,7 @@
                                     (0.9997999999999999, 0.10257568359375001)
                                     (1.0, 0.1074853515625)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Index size (kB)/Queries per second (s) tradeoff - down and to the right is better }
@@ -1048,24 +937,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9502 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9856 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9962 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.9996 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 0.9999 , y: 1776.53609042142, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 1485.1068108846118, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.2732 , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.38570000000000004 , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -1169,15 +1044,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9502, 2504.0471400170745)
-                                    (0.9856, 2393.2496308249206)
-                                    (0.9962, 2173.0838975481265)
-                                    (0.9996, 1977.0725232291538)
-                                    (0.9999, 1776.53609042142)
-                                    (1.0, 1485.1068108846118)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.2732, 76004.42149134728)
                                     (0.38570000000000004, 72519.39070145409)
                                     (0.5765, 68115.8893075224)
@@ -1193,7 +1059,7 @@
                                     (0.9992000000000001, 49914.36391764846)
                                     (1.0, 47634.39785581247)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Epsilon 0.01 Recall-Queries per second (1/s) tradeoff - up and to the right is better }
@@ -1211,22 +1077,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9987999999999999 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9997 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9999 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.3773 , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.5288999999999999 , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -1325,13 +1179,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9987999999999999, 2504.0471400170745)
-                                    (0.9997, 2393.2496308249206)
-                                    (0.9999, 2173.0838975481265)
-                                    (1.0, 1977.0725232291538)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.3773, 76004.42149134728)
                                     (0.5288999999999999, 72519.39070145409)
                                     (0.7662, 68115.8893075224)
@@ -1342,7 +1189,7 @@
                                     (0.9983000000000001, 57011.06429251054)
                                     (1.0, 54319.10484873602)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Epsilon 0.1 Recall-Queries per second (1/s) tradeoff - up and to the right is better }
@@ -1360,22 +1207,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.40030479431152344, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 0.41687488555908203, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.4611015319824219, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.5038976669311523, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 0.012755393981933594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 0.0133514404296875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -1479,13 +1314,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9907999999999999, 0.40030479431152344)
-                                    (0.9976, 0.41687488555908203)
-                                    (0.9996, 0.4611015319824219)
-                                    (1.0, 0.5038976669311523)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.32189999999999996, 0.012755393981933594)
                                     (0.4551, 0.0133514404296875)
                                     (0.6795, 0.01430511474609375)
@@ -1501,7 +1329,7 @@
                                     (0.9997999999999999, 0.019550323486328125)
                                     (1.0, 0.020503997802734375)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 50 (millis) tradeoff - down and to the right is better }
@@ -1519,22 +1347,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.4539608955383301, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 0.48239231109619135, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.5159497261047363, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.5695939064025879, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 0.015735626220703125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 0.01621246337890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -1635,13 +1451,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9907999999999999, 0.4539608955383301)
-                                    (0.9976, 0.48239231109619135)
-                                    (0.9996, 0.5159497261047363)
-                                    (1.0, 0.5695939064025879)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.32189999999999996, 0.015735626220703125)
                                     (0.4551, 0.01621246337890625)
                                     (0.6795, 0.01646280288696288)
@@ -1654,7 +1463,7 @@
                                     (0.9997999999999999, 0.022649765014648438)
                                     (1.0, 0.024080276489257812)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 95 (millis) tradeoff - down and to the right is better }
@@ -1672,22 +1481,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.49209833145141607, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 0.5195212364196776, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.5405044555664062, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.6146979331970214, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.4551 , y: 0.020749568939208977, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.6301 , y: 0.023391246795654273, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
@@ -1785,13 +1582,6 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9907999999999999, 0.49209833145141607)
-                                    (0.9976, 0.5195212364196776)
-                                    (0.9996, 0.5405044555664062)
-                                    (1.0, 0.6146979331970214)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.4551, 0.020749568939208977)
                                     (0.6301, 0.023391246795654273)
                                     (0.8436, 0.024325847625732415)
@@ -1801,7 +1591,7 @@
                                     (0.9997999999999999, 0.032429695129394524)
                                     (1.0, 0.0350499153137207)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 99 (millis) tradeoff - down and to the right is better }
@@ -1819,21 +1609,10 @@
                                         type: "line",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.563529968261732, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9996 , y: 0.576326370239264, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.7211174964904912, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.6795 , y: 0.031025171279909995, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.9155 , y: 0.0358045101165809, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -1928,19 +1707,13 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9907999999999999, 0.563529968261732)
-                                    (0.9996, 0.576326370239264)
-                                    (1.0, 0.7211174964904912)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot coordinates {
                                                 (0.6795, 0.031025171279909995)
                                     (0.9155, 0.0358045101165809)
                                     (0.9978999999999999, 0.04077553749084526)
                                     (0.9996, 0.04818272590637407)
                                     (1.0, 0.048656463623048596)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 99.9 (millis) tradeoff - down and to the right is better }
@@ -1950,7 +1723,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for random-xs-20-angular (k = 10)</h2>
+                                                        <h2>Scatterplots for scann</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1960,30 +1733,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 1776.53609042142, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 1485.1068108846118, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1030.6754858309594, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 679.872373506545, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 384.7679271749669, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 145.02628402234612, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 73.88611585500325, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 38.460871535924085, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -2119,21 +1872,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9907999999999999, 2504.0471400170745)
-                                    (0.9976, 2393.2496308249206)
-                                    (0.9996, 2173.0838975481265)
-                                    (1.0, 1977.0725232291538)
-                                    (1.0, 1776.53609042142)
-                                    (1.0, 1485.1068108846118)
-                                    (1.0, 1030.6754858309594)
-                                    (1.0, 679.872373506545)
-                                    (1.0, 384.7679271749669)
-                                    (1.0, 145.02628402234612)
-                                    (1.0, 73.88611585500325)
-                                    (1.0, 38.460871535924085)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.32189999999999996, 76004.42149134728)
                                     (0.4551, 72519.39070145409)
                                     (0.2572, 71153.8161399223)
@@ -2181,7 +1919,7 @@
                                     (1.0, 8359.8334532539)
                                     (1.0, 5370.860901711661)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Queries per second (1/s) tradeoff - up and to the right is better }
@@ -2199,30 +1937,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 0.9996 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.9976 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9907999999999999 , y: 3.4957456588745117, label: "Annoy(n_trees=400, search_k=100)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 1.0 , y: 0.4140613079071045, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 1.0 , y: 0.4140613079071045, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -2358,21 +2076,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (1.0, 3.4957456588745117)
-                                    (0.9996, 3.4957456588745117)
-                                    (0.9976, 3.4957456588745117)
-                                    (0.9907999999999999, 3.4957456588745117)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (1.0, 0.4140613079071045)
                                     (1.0, 0.4140613079071045)
                                     (1.0, 0.4140613079071045)
@@ -2420,7 +2123,7 @@
                                     (0.4039, 0.47060132026672363)
                                     (0.2572, 0.47060132026672363)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Build time (s) tradeoff - down and to the right is better }
@@ -2438,30 +2141,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 58524.0, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 0.9996 , y: 58524.0, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.9976 , y: 58524.0, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9907999999999999 , y: 58524.0, label: "Annoy(n_trees=400, search_k=100)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 1.0 , y: 5120.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 1.0 , y: 5120.0, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -2597,21 +2280,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (1.0, 58524.0)
-                                    (0.9996, 58524.0)
-                                    (0.9976, 58524.0)
-                                    (0.9907999999999999, 58524.0)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (1.0, 5120.0)
                                     (1.0, 5120.0)
                                     (1.0, 5120.0)
@@ -2659,7 +2327,7 @@
                                     (0.4039, 5888.0)
                                     (0.2572, 5888.0)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Index size (kB) tradeoff - down and to the right is better }
@@ -2677,18 +2345,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                             ]
                         },
@@ -2779,10 +2439,7 @@
             ]
                                 \addplot [only marks] coordinates {
                                         };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
-                                        };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Distance computations tradeoff - down and to the right is better }
@@ -2800,30 +2457,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.02375130433668527 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.023630199448841923 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.02359199956548582 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.02358165514842772 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 0.023580933238561006 , y: 1776.53609042142, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 0.023580828681541894 , y: 1485.1068108846118, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 0.023580828681541894 , y: 1030.6754858309594, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 0.023580828681541894 , y: 679.872373506545, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 0.023580828681541894 , y: 384.7679271749669, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 0.023580828681541894 , y: 145.02628402234612, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 0.023580828681541894 , y: 73.88611585500325, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 0.023580828681541894 , y: 38.460871535924085, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: inf , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: inf , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -2959,21 +2596,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.02375130433668527, 2504.0471400170745)
-                                    (0.023630199448841923, 2393.2496308249206)
-                                    (0.02359199956548582, 2173.0838975481265)
-                                    (0.02358165514842772, 1977.0725232291538)
-                                    (0.023580933238561006, 1776.53609042142)
-                                    (0.023580828681541894, 1485.1068108846118)
-                                    (0.023580828681541894, 1030.6754858309594)
-                                    (0.023580828681541894, 679.872373506545)
-                                    (0.023580828681541894, 384.7679271749669)
-                                    (0.023580828681541894, 145.02628402234612)
-                                    (0.023580828681541894, 73.88611585500325)
-                                    (0.023580828681541894, 38.460871535924085)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (inf, 76004.42149134728)
                                     (inf, 72519.39070145409)
                                     (inf, 71153.8161399223)
@@ -3021,7 +2643,7 @@
                                     (0.02358082796574708, 8359.8334532539)
                                     (0.02358082796574708, 5370.860901711661)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Relative Error-Queries per second (1/s) tradeoff - up and to the left is better }
@@ -3039,30 +2661,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 0.9996 , y: 10.0, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.9976 , y: 10.0, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9907999999999999 , y: 10.0, label: "Annoy(n_trees=400, search_k=100)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.2572 , y: 6.441, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                                     { x: 0.32189999999999996 , y: 8.545, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -3198,21 +2800,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (0.9996, 10.0)
-                                    (0.9976, 10.0)
-                                    (0.9907999999999999, 10.0)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.2572, 6.441)
                                     (0.32189999999999996, 8.545)
                                     (0.4039, 8.689)
@@ -3260,7 +2847,7 @@
                                     (0.9154, 10.0)
                                     (0.8436, 10.0)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Candidates generated tradeoff - down and to the right is better }
@@ -3278,30 +2865,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 23.37176447868347, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 24.453780017852786, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 26.931311794281008, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 29.60134204101563, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 32.94275884151459, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 39.407266582489015, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 56.782179070472715, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 86.08086205673217, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 152.10207469654083, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 403.54064364624026, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 792.0838620729446, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 1521.650385518074, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 0.067364501953125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 0.070601806640625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -3437,21 +3004,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9907999999999999, 23.37176447868347)
-                                    (0.9976, 24.453780017852786)
-                                    (0.9996, 26.931311794281008)
-                                    (1.0, 29.60134204101563)
-                                    (1.0, 32.94275884151459)
-                                    (1.0, 39.407266582489015)
-                                    (1.0, 56.782179070472715)
-                                    (1.0, 86.08086205673217)
-                                    (1.0, 152.10207469654083)
-                                    (1.0, 403.54064364624026)
-                                    (1.0, 792.0838620729446)
-                                    (1.0, 1521.650385518074)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.32189999999999996, 0.067364501953125)
                                     (0.4551, 0.070601806640625)
                                     (0.6795, 0.07516601562500001)
@@ -3499,7 +3051,7 @@
                                     (1.0, 0.7043202514648438)
                                     (1.0, 1.0962860717773437)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Index size (kB)/Queries per second (s) tradeoff - down and to the right is better }
@@ -3517,30 +3069,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9502 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9856 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9962 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.9996 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 0.9999 , y: 1776.53609042142, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 1485.1068108846118, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1030.6754858309594, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 679.872373506545, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 384.7679271749669, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 145.02628402234612, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 73.88611585500325, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 38.460871535924085, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.2732 , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.38570000000000004 , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -3676,21 +3208,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9502, 2504.0471400170745)
-                                    (0.9856, 2393.2496308249206)
-                                    (0.9962, 2173.0838975481265)
-                                    (0.9996, 1977.0725232291538)
-                                    (0.9999, 1776.53609042142)
-                                    (1.0, 1485.1068108846118)
-                                    (1.0, 1030.6754858309594)
-                                    (1.0, 679.872373506545)
-                                    (1.0, 384.7679271749669)
-                                    (1.0, 145.02628402234612)
-                                    (1.0, 73.88611585500325)
-                                    (1.0, 38.460871535924085)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.2732, 76004.42149134728)
                                     (0.38570000000000004, 72519.39070145409)
                                     (0.21869999999999998, 71153.8161399223)
@@ -3738,7 +3255,7 @@
                                     (1.0, 8359.8334532539)
                                     (1.0, 5370.860901711661)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Epsilon 0.01 Recall-Queries per second (1/s) tradeoff - up and to the right is better }
@@ -3756,30 +3273,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9987999999999999 , y: 2504.0471400170745, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9997 , y: 2393.2496308249206, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9999 , y: 2173.0838975481265, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 1977.0725232291538, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 1776.53609042142, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 1485.1068108846118, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1030.6754858309594, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 679.872373506545, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 384.7679271749669, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 145.02628402234612, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 73.88611585500325, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 38.460871535924085, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.3773 , y: 76004.42149134728, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.5288999999999999 , y: 72519.39070145409, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -3915,21 +3412,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9987999999999999, 2504.0471400170745)
-                                    (0.9997, 2393.2496308249206)
-                                    (0.9999, 2173.0838975481265)
-                                    (1.0, 1977.0725232291538)
-                                    (1.0, 1776.53609042142)
-                                    (1.0, 1485.1068108846118)
-                                    (1.0, 1030.6754858309594)
-                                    (1.0, 679.872373506545)
-                                    (1.0, 384.7679271749669)
-                                    (1.0, 145.02628402234612)
-                                    (1.0, 73.88611585500325)
-                                    (1.0, 38.460871535924085)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.3773, 76004.42149134728)
                                     (0.5288999999999999, 72519.39070145409)
                                     (0.2934, 71153.8161399223)
@@ -3977,7 +3459,7 @@
                                     (1.0, 8359.8334532539)
                                     (1.0, 5370.860901711661)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Epsilon 0.1 Recall-Queries per second (1/s) tradeoff - up and to the right is better }
@@ -3995,30 +3477,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.40030479431152344, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 0.41687488555908203, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.4611015319824219, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.5038976669311523, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.5636215209960938, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.6750822067260742, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 0.9746551513671875, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 1.4379024505615234, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 2.587556838989258, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 6.870865821838379, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 13.42010498046875, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 25.939464569091797, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 0.012755393981933594, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 0.0133514404296875, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -4154,21 +3616,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9907999999999999, 0.40030479431152344)
-                                    (0.9976, 0.41687488555908203)
-                                    (0.9996, 0.4611015319824219)
-                                    (1.0, 0.5038976669311523)
-                                    (1.0, 0.5636215209960938)
-                                    (1.0, 0.6750822067260742)
-                                    (1.0, 0.9746551513671875)
-                                    (1.0, 1.4379024505615234)
-                                    (1.0, 2.587556838989258)
-                                    (1.0, 6.870865821838379)
-                                    (1.0, 13.42010498046875)
-                                    (1.0, 25.939464569091797)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.32189999999999996, 0.012755393981933594)
                                     (0.4551, 0.0133514404296875)
                                     (0.2572, 0.013589859008789062)
@@ -4216,7 +3663,7 @@
                                     (1.0, 0.11801719665527344)
                                     (1.0, 0.18310546875)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 50 (millis) tradeoff - down and to the right is better }
@@ -4234,30 +3681,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.4539608955383301, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 0.48239231109619135, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.5159497261047363, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.5695939064025879, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.6172776222229004, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.726473331451416, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1.0402202606201172, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 1.63729190826416, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 2.8298020362854004, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 7.206845283508301, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 14.079439640045166, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 26.944541931152344, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.32189999999999996 , y: 0.015735626220703125, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.4551 , y: 0.01621246337890625, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
@@ -4393,21 +3820,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9907999999999999, 0.4539608955383301)
-                                    (0.9976, 0.48239231109619135)
-                                    (0.9996, 0.5159497261047363)
-                                    (1.0, 0.5695939064025879)
-                                    (1.0, 0.6172776222229004)
-                                    (1.0, 0.726473331451416)
-                                    (1.0, 1.0402202606201172)
-                                    (1.0, 1.63729190826416)
-                                    (1.0, 2.8298020362854004)
-                                    (1.0, 7.206845283508301)
-                                    (1.0, 14.079439640045166)
-                                    (1.0, 26.944541931152344)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.32189999999999996, 0.015735626220703125)
                                     (0.4551, 0.01621246337890625)
                                     (0.6795, 0.01646280288696288)
@@ -4455,7 +3867,7 @@
                                     (1.0, 0.13113021850585938)
                                     (1.0, 0.20052194595336914)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 95 (millis) tradeoff - down and to the right is better }
@@ -4473,30 +3885,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.49209833145141607, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9976 , y: 0.5195212364196776, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.5405044555664062, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.6146979331970214, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.6446933746337891, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.7467317581176758, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1.0836362838745117, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 2.376835346221924, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 2.9344677925109863, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 7.43190050125122, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 16.91174983978271, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 27.35873460769653, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.4551 , y: 0.020749568939208977, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.2572 , y: 0.02290248870849608, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
@@ -4632,21 +4024,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9907999999999999, 0.49209833145141607)
-                                    (0.9976, 0.5195212364196776)
-                                    (0.9996, 0.5405044555664062)
-                                    (1.0, 0.6146979331970214)
-                                    (1.0, 0.6446933746337891)
-                                    (1.0, 0.7467317581176758)
-                                    (1.0, 1.0836362838745117)
-                                    (1.0, 2.376835346221924)
-                                    (1.0, 2.9344677925109863)
-                                    (1.0, 7.43190050125122)
-                                    (1.0, 16.91174983978271)
-                                    (1.0, 27.35873460769653)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.4551, 0.020749568939208977)
                                     (0.2572, 0.02290248870849608)
                                     (0.6301, 0.023391246795654273)
@@ -4694,7 +4071,7 @@
                                     (1.0, 0.14616012573242188)
                                     (1.0, 0.24511337280273435)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 99 (millis) tradeoff - down and to the right is better }
@@ -4712,30 +4089,10 @@
                                         type: "bubble",
                                         data: { datasets: [
                                                 {
-                            label: "annoy",
+                            label: "random-xs-20-angular (k = 10)",
                             fill: false,
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
-                            data: [
-                                                                    { x: 0.9907999999999999 , y: 0.563529968261732, label: "Annoy(n_trees=400, search_k=100)" },
-                                                                    { x: 0.9996 , y: 0.576326370239264, label: "Annoy(n_trees=400, search_k=400)" },
-                                                                    { x: 0.9976 , y: 0.6021096706390473, label: "Annoy(n_trees=400, search_k=200)" },
-                                                                    { x: 1.0 , y: 0.7211174964904912, label: "Annoy(n_trees=400, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.7310297489166294, label: "Annoy(n_trees=400, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.760848045349126, label: "Annoy(n_trees=400, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1.1713719367980977, label: "Annoy(n_trees=400, search_k=10000)" },
-                                                                    { x: 1.0 , y: 3.089998006820687, label: "Annoy(n_trees=400, search_k=40000)" },
-                                                                    { x: 1.0 , y: 4.634442090988251, label: "Annoy(n_trees=400, search_k=20000)" },
-                                                                    { x: 1.0 , y: 7.6792340278626785, label: "Annoy(n_trees=400, search_k=100000)" },
-                                                                    { x: 1.0 , y: 23.983502149582105, label: "Annoy(n_trees=400, search_k=200000)" },
-                                                                    { x: 1.0 , y: 27.747401475906504, label: "Annoy(n_trees=400, search_k=400000)" },
-                                                            ]
-                        },
-                                                {
-                            label: "scann",
-                            fill: false,
-                            pointStyle: "triangle",
-                            borderColor: "rgba(76, 229, 229, 1)",
                             data: [
                                                                     { x: 0.6795 , y: 0.031025171279909995, label: "scann n_leaves=1500 avq_threshold=0.55 dims_per_block=1" },
                                                                     { x: 0.6301 , y: 0.032926797866823544, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
@@ -4871,21 +4228,6 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9907999999999999, 0.563529968261732)
-                                    (0.9996, 0.576326370239264)
-                                    (0.9976, 0.6021096706390473)
-                                    (1.0, 0.7211174964904912)
-                                    (1.0, 0.7310297489166294)
-                                    (1.0, 0.760848045349126)
-                                    (1.0, 1.1713719367980977)
-                                    (1.0, 3.089998006820687)
-                                    (1.0, 4.634442090988251)
-                                    (1.0, 7.6792340278626785)
-                                    (1.0, 23.983502149582105)
-                                    (1.0, 27.747401475906504)
-                            };
-            \addlegendentry{ annoy };
-                                \addplot [only marks] coordinates {
                                                 (0.6795, 0.031025171279909995)
                                     (0.6301, 0.032926797866823544)
                                     (0.4551, 0.03458166122436622)
@@ -4933,7 +4275,7 @@
                                     (0.9999, 0.21119999885560878)
                                     (1.0, 0.46161866188049683)
                             };
-            \addlegendentry{ scann };
+            \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
     \end{tikzpicture}
     \caption{ Recall-Percentile 99.9 (millis) tradeoff - down and to the right is better }
