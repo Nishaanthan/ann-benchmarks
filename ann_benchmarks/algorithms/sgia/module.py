@@ -28,6 +28,9 @@ class Sgia(BaseANN):
         print("====SIZE======================================================")
         print(self._sgia.get_size())
         print("====END SIZE======================================================")
+        print("====Full Tree======================================================")
+        print(self._sgia)
+        print("====END Full Tree======================================================")
         self._query = query
 
     def query(self, v, n):
