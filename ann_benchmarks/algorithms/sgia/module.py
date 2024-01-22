@@ -27,6 +27,13 @@ class Sgia(BaseANN):
         self._query = query
 
     def query(self, v, n):
+        print ("====QUERY======================================================")
+        print (v.tolist())
+        print ("====END QUERY======================================================")
+        print ("====Query Results======================================================")
+        print (self._sgia.search(v.tolist(), n))
+        print ("====END Query Results======================================================")
+
         return self._sgia.search(v.tolist(), n)
 
     def __str__(self):
