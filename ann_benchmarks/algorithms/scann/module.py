@@ -13,6 +13,7 @@ class Scann(BaseANN):
         self.avq_threshold = avq_threshold
         self.dims_per_block = dims_per_block
         self.dist = dist
+        self.x = 0  
 
     def fit(self, X):
         if self.dist == "dot_product":
@@ -34,4 +35,13 @@ class Scann(BaseANN):
         self.leaves_to_search, self.reorder = leaves_reorder
 
     def query(self, v, n):
+        if(self.x < 5):
+            print ("====QUERY======================================================")
+            print (v.tolist())
+            print ("====END QUERY======================================================")
+            print ("====Query Results======================================================")
+            print (self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0])
+            print ("====END Query Results======================================================")
+            self.x += 1
+            
         return self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0]

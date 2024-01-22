@@ -8,6 +8,7 @@ class Annoy(BaseANN):
         self._search_k = None
         self._metric = metric
         self.x = 0
+        self.y = 0
 
     def fit(self, X):
         self._annoy = annoy.AnnoyIndex(X.shape[1], metric=self._metric)
@@ -27,7 +28,7 @@ class Annoy(BaseANN):
             print (self._annoy.get_nns_by_vector(v.tolist(), n, self._search_k))
             print ("====END Query Results======================================================")
             self.x += 1
-            
+
         return self._annoy.get_nns_by_vector(v.tolist(), n, self._search_k)
 
     def __str__(self):
