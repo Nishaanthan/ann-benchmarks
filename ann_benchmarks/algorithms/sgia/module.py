@@ -7,6 +7,7 @@ class Sgia(BaseANN):
         self._sgia = None
         self._dimensions = None
         self._query = None
+        self.x = 0
 
     def fit(self, X):
         self._dimensions = X.shape[1]
@@ -27,12 +28,14 @@ class Sgia(BaseANN):
         self._query = query
 
     def query(self, v, n):
-        print ("====QUERY======================================================")
-        print (v.tolist())
-        print ("====END QUERY======================================================")
-        print ("====Query Results======================================================")
-        print (self._sgia.search(v.tolist(), n))
-        print ("====END Query Results======================================================")
+        if(self.x < 5):
+            print ("====QUERY======================================================")
+            print (v.tolist())
+            print ("====END QUERY======================================================")
+            print ("====Query Results======================================================")
+            print (self._sgia.search(v.tolist(), n))
+            print ("====END Query Results======================================================")
+            self.x += 1
 
         return self._sgia.search(v.tolist(), n)
 
