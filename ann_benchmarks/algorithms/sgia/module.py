@@ -25,6 +25,12 @@ class Sgia(BaseANN):
             self._sgia.insert(x.tolist(), i)
 
     def set_query_arguments(self, query):
+        print("====SIZE======================================================")
+        print(self._sgia.get_size())
+        print("====END SIZE======================================================")
+        print("====Full Tree======================================================")
+        print(self._sgia)
+        print("====END Full Tree======================================================")
         self._query = query
 
     def query(self, v, n):
