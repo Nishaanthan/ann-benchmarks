@@ -1,13 +1,13 @@
 float:
   any:
-  - base_args: {}
+  - base_args: ['@metric']
     constructor: Sgia
     disabled: false
     docker_tag: ann-benchmarks-sgia
     module: ann_benchmarks.algorithms.sgia
     name: sgia
     run_groups:
-      sgia:
-        args: []
-        query_args: [[100, 200, 400, 1000, 2000, 4000, 10000, 20000, 40000, 100000,
-            200000, 400000]]
+      redisearch:
+        arg_groups: [[200]]
+        args: {}
+        query_args: [[10, 20, 40, 80, 120, 200, 400, 600, 800]]
