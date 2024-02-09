@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>annoy</title>
+        <title>bruteforce</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for annoy</h2>
+                                                        <h2>Plots for bruteforce</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,10 +62,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -154,10 +151,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.986, 9907.601891614817)
-                                    (0.9971, 8521.56140097806)
-                                    (0.9996, 7083.537120853881)
-                                    (1.0, 5613.534677860801)
+                                                (1.0, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -182,7 +176,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 0.0004961490631103516, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -271,7 +265,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.87906813621521)
+                                                (1.0, 0.0004961490631103516)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -296,7 +290,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 128.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -385,7 +379,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 17572.0)
+                                                (1.0, 128.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -522,11 +516,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023792487920446487 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.02364292708030206 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.023597349433968733 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.023581681116698873 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 0.023580828681541894 , y: 4434.5876999331795, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 0.023580828681541894 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -615,11 +605,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.023792487920446487, 9907.601891614817)
-                                    (0.02364292708030206, 8521.56140097806)
-                                    (0.023597349433968733, 7083.537120853881)
-                                    (0.023581681116698873, 5613.534677860801)
-                                    (0.023580828681541894, 4434.5876999331795)
+                                                (0.023580828681541894, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -644,7 +630,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=20000)" },
+                                                                    { x: 1.0 , y: 10.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -758,10 +744,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 1.7735876140594484, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 2.0620634145736694, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 2.4806815719604494, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 3.1302915201187136, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.10036874389648437, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -850,10 +833,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.986, 1.7735876140594484)
-                                    (0.9971, 2.0620634145736694)
-                                    (0.9996, 2.4806815719604494)
-                                    (1.0, 3.1302915201187136)
+                                                (1.0, 0.10036874389648437)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -878,11 +858,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9452 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9842000000000001 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9955 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.9999 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 4434.5876999331795, label: "Annoy(n_trees=100, search_k=2000)" },
+                                                                    { x: 1.0 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -971,11 +947,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9452, 9907.601891614817)
-                                    (0.9842000000000001, 8521.56140097806)
-                                    (0.9955, 7083.537120853881)
-                                    (0.9999, 5613.534677860801)
-                                    (1.0, 4434.5876999331795)
+                                                (1.0, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1000,9 +972,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9976 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9997999999999999 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 1.0 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
+                                                                    { x: 1.0 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1091,9 +1061,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9976, 9907.601891614817)
-                                    (0.9997999999999999, 8521.56140097806)
-                                    (1.0, 7083.537120853881)
+                                                (1.0, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1118,10 +1086,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.10061264038085938, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.11491775512695312, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.14090538024902344, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.17714500427246094, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.786900520324707, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1210,10 +1175,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.986, 0.10061264038085938)
-                                    (0.9971, 0.11491775512695312)
-                                    (0.9996, 0.14090538024902344)
-                                    (1.0, 0.17714500427246094)
+                                                (1.0, 0.786900520324707)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1238,10 +1200,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.11539459228515625, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.1416325569152832, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.15807151794433594, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.20122528076171875, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.8356809616088867, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1330,10 +1289,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.986, 0.11539459228515625)
-                                    (0.9971, 0.1416325569152832)
-                                    (0.9996, 0.15807151794433594)
-                                    (1.0, 0.20122528076171875)
+                                                (1.0, 0.8356809616088867)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1358,10 +1314,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.12804269790649414, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.15332698822021482, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.17142295837402344, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.22007226943969727, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 0.8631086349487305, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1450,10 +1403,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.986, 0.12804269790649414)
-                                    (0.9971, 0.15332698822021482)
-                                    (0.9996, 0.17142295837402344)
-                                    (1.0, 0.22007226943969727)
+                                                (1.0, 0.8631086349487305)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1478,10 +1428,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.1633229255676275, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.18430113792419467, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.2198579311370882, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.2842061519622813, label: "Annoy(n_trees=100, search_k=1000)" },
+                                                                    { x: 1.0 , y: 1.3600873947143686, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1570,10 +1517,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.986, 0.1633229255676275)
-                                    (0.9971, 0.18430113792419467)
-                                    (0.9996, 0.2198579311370882)
-                                    (1.0, 0.2842061519622813)
+                                                (1.0, 1.3600873947143686)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1585,7 +1529,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for annoy</h2>
+                                                        <h2>Scatterplots for bruteforce</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1600,18 +1544,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 4434.5876999331795, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 3182.389927563008, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1503.7891377215408, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 691.525144283996, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 362.9835535539347, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 155.6751254784557, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 78.76287625232159, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 40.61353599845784, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1700,18 +1633,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.986, 9907.601891614817)
-                                    (0.9971, 8521.56140097806)
-                                    (0.9996, 7083.537120853881)
-                                    (1.0, 5613.534677860801)
-                                    (1.0, 4434.5876999331795)
-                                    (1.0, 3182.389927563008)
-                                    (1.0, 1503.7891377215408)
-                                    (1.0, 691.525144283996)
-                                    (1.0, 362.9835535539347)
-                                    (1.0, 155.6751254784557)
-                                    (1.0, 78.76287625232159)
-                                    (1.0, 40.61353599845784)
+                                                (1.0, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1736,18 +1658,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=400000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 0.9996 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.9971 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.986 , y: 0.87906813621521, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 1.0 , y: 0.0004961490631103516, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1836,18 +1747,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (1.0, 0.87906813621521)
-                                    (0.9996, 0.87906813621521)
-                                    (0.9971, 0.87906813621521)
-                                    (0.986, 0.87906813621521)
+                                                (1.0, 0.0004961490631103516)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1872,18 +1772,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=400000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 17572.0, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 0.9996 , y: 17572.0, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.9971 , y: 17572.0, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.986 , y: 17572.0, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 1.0 , y: 128.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1972,18 +1861,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (1.0, 17572.0)
-                                    (0.9996, 17572.0)
-                                    (0.9971, 17572.0)
-                                    (0.986, 17572.0)
+                                                (1.0, 128.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2120,18 +1998,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023792487920446487 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.02364292708030206 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.023597349433968733 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.023581681116698873 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 0.023580828681541894 , y: 4434.5876999331795, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 0.023580828681541894 , y: 3182.389927563008, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 0.023580828681541894 , y: 1503.7891377215408, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 0.023580828681541894 , y: 691.525144283996, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 0.023580828681541894 , y: 362.9835535539347, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 0.023580828681541894 , y: 155.6751254784557, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 0.023580828681541894 , y: 78.76287625232159, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 0.023580828681541894 , y: 40.61353599845784, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 0.023580828681541894 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2220,18 +2087,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.023792487920446487, 9907.601891614817)
-                                    (0.02364292708030206, 8521.56140097806)
-                                    (0.023597349433968733, 7083.537120853881)
-                                    (0.023581681116698873, 5613.534677860801)
-                                    (0.023580828681541894, 4434.5876999331795)
-                                    (0.023580828681541894, 3182.389927563008)
-                                    (0.023580828681541894, 1503.7891377215408)
-                                    (0.023580828681541894, 691.525144283996)
-                                    (0.023580828681541894, 362.9835535539347)
-                                    (0.023580828681541894, 155.6751254784557)
-                                    (0.023580828681541894, 78.76287625232159)
-                                    (0.023580828681541894, 40.61353599845784)
+                                                (0.023580828681541894, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2256,18 +2112,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=400000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 10.0, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 0.9996 , y: 10.0, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.9971 , y: 10.0, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.986 , y: 10.0, label: "Annoy(n_trees=100, search_k=100)" },
+                                                                    { x: 1.0 , y: 10.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2357,17 +2202,6 @@
             ]
                                 \addplot [only marks] coordinates {
                                                 (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (1.0, 10.0)
-                                    (0.9996, 10.0)
-                                    (0.9971, 10.0)
-                                    (0.986, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2392,18 +2226,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 1.7735876140594484, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 2.0620634145736694, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 2.4806815719604494, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 3.1302915201187136, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 3.96248787689209, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 5.521636380195617, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 11.68514890766144, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 25.410500464439394, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 48.4099068069458, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 112.87609337711334, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 223.1000293045044, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 432.66363216114047, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 0.10036874389648437, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2492,18 +2315,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.986, 1.7735876140594484)
-                                    (0.9971, 2.0620634145736694)
-                                    (0.9996, 2.4806815719604494)
-                                    (1.0, 3.1302915201187136)
-                                    (1.0, 3.96248787689209)
-                                    (1.0, 5.521636380195617)
-                                    (1.0, 11.68514890766144)
-                                    (1.0, 25.410500464439394)
-                                    (1.0, 48.4099068069458)
-                                    (1.0, 112.87609337711334)
-                                    (1.0, 223.1000293045044)
-                                    (1.0, 432.66363216114047)
+                                                (1.0, 0.10036874389648437)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2528,18 +2340,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9452 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9842000000000001 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9955 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 0.9999 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 4434.5876999331795, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 3182.389927563008, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1503.7891377215408, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 691.525144283996, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 362.9835535539347, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 155.6751254784557, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 78.76287625232159, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 40.61353599845784, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2628,18 +2429,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9452, 9907.601891614817)
-                                    (0.9842000000000001, 8521.56140097806)
-                                    (0.9955, 7083.537120853881)
-                                    (0.9999, 5613.534677860801)
-                                    (1.0, 4434.5876999331795)
-                                    (1.0, 3182.389927563008)
-                                    (1.0, 1503.7891377215408)
-                                    (1.0, 691.525144283996)
-                                    (1.0, 362.9835535539347)
-                                    (1.0, 155.6751254784557)
-                                    (1.0, 78.76287625232159)
-                                    (1.0, 40.61353599845784)
+                                                (1.0, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2664,18 +2454,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9976 , y: 9907.601891614817, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9997999999999999 , y: 8521.56140097806, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 1.0 , y: 7083.537120853881, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 5613.534677860801, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 4434.5876999331795, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 3182.389927563008, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 1503.7891377215408, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 691.525144283996, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 362.9835535539347, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 155.6751254784557, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 78.76287625232159, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 40.61353599845784, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 1275.2974186068645, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2764,18 +2543,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9976, 9907.601891614817)
-                                    (0.9997999999999999, 8521.56140097806)
-                                    (1.0, 7083.537120853881)
-                                    (1.0, 5613.534677860801)
-                                    (1.0, 4434.5876999331795)
-                                    (1.0, 3182.389927563008)
-                                    (1.0, 1503.7891377215408)
-                                    (1.0, 691.525144283996)
-                                    (1.0, 362.9835535539347)
-                                    (1.0, 155.6751254784557)
-                                    (1.0, 78.76287625232159)
-                                    (1.0, 40.61353599845784)
+                                                (1.0, 1275.2974186068645)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2800,18 +2568,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.10061264038085938, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.11491775512695312, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.14090538024902344, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.17714500427246094, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.22411346435546875, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.31256675720214844, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 0.6582736968994141, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 1.439809799194336, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 2.749204635620117, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 6.390810012817383, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 12.673497200012207, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 24.62005615234375, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 0.786900520324707, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2900,18 +2657,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.986, 0.10061264038085938)
-                                    (0.9971, 0.11491775512695312)
-                                    (0.9996, 0.14090538024902344)
-                                    (1.0, 0.17714500427246094)
-                                    (1.0, 0.22411346435546875)
-                                    (1.0, 0.31256675720214844)
-                                    (1.0, 0.6582736968994141)
-                                    (1.0, 1.439809799194336)
-                                    (1.0, 2.749204635620117)
-                                    (1.0, 6.390810012817383)
-                                    (1.0, 12.673497200012207)
-                                    (1.0, 24.62005615234375)
+                                                (1.0, 0.786900520324707)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2936,18 +2682,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.11539459228515625, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.1416325569152832, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.15807151794433594, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.20122528076171875, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.2472400665283203, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.35071372985839844, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 0.7472038269042969, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 1.565718650817871, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 2.9349565505981445, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 6.774532794952393, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 13.311004638671875, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 25.575554370880127, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 0.8356809616088867, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -3036,18 +2771,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.986, 0.11539459228515625)
-                                    (0.9971, 0.1416325569152832)
-                                    (0.9996, 0.15807151794433594)
-                                    (1.0, 0.20122528076171875)
-                                    (1.0, 0.2472400665283203)
-                                    (1.0, 0.35071372985839844)
-                                    (1.0, 0.7472038269042969)
-                                    (1.0, 1.565718650817871)
-                                    (1.0, 2.9349565505981445)
-                                    (1.0, 6.774532794952393)
-                                    (1.0, 13.311004638671875)
-                                    (1.0, 25.575554370880127)
+                                                (1.0, 0.8356809616088867)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3072,18 +2796,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.12804269790649414, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.15332698822021482, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.17142295837402344, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.22007226943969727, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.270845890045166, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.3728938102722168, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 0.7994723320007323, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 1.6215300559997559, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 3.035588264465332, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 6.986868381500244, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 13.565077781677246, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 25.93663215637207, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 0.8631086349487305, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -3172,18 +2885,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.986, 0.12804269790649414)
-                                    (0.9971, 0.15332698822021482)
-                                    (0.9996, 0.17142295837402344)
-                                    (1.0, 0.22007226943969727)
-                                    (1.0, 0.270845890045166)
-                                    (1.0, 0.3728938102722168)
-                                    (1.0, 0.7994723320007323)
-                                    (1.0, 1.6215300559997559)
-                                    (1.0, 3.035588264465332)
-                                    (1.0, 6.986868381500244)
-                                    (1.0, 13.565077781677246)
-                                    (1.0, 25.93663215637207)
+                                                (1.0, 0.8631086349487305)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3208,18 +2910,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.986 , y: 0.1633229255676275, label: "Annoy(n_trees=100, search_k=100)" },
-                                                                    { x: 0.9971 , y: 0.18430113792419467, label: "Annoy(n_trees=100, search_k=200)" },
-                                                                    { x: 0.9996 , y: 0.2198579311370882, label: "Annoy(n_trees=100, search_k=400)" },
-                                                                    { x: 1.0 , y: 0.2842061519622813, label: "Annoy(n_trees=100, search_k=1000)" },
-                                                                    { x: 1.0 , y: 0.35668778419494757, label: "Annoy(n_trees=100, search_k=2000)" },
-                                                                    { x: 1.0 , y: 0.43273425102233926, label: "Annoy(n_trees=100, search_k=4000)" },
-                                                                    { x: 1.0 , y: 0.9355635643005379, label: "Annoy(n_trees=100, search_k=10000)" },
-                                                                    { x: 1.0 , y: 1.6876397132873637, label: "Annoy(n_trees=100, search_k=20000)" },
-                                                                    { x: 1.0 , y: 3.243029594421392, label: "Annoy(n_trees=100, search_k=40000)" },
-                                                                    { x: 1.0 , y: 7.138522624969485, label: "Annoy(n_trees=100, search_k=100000)" },
-                                                                    { x: 1.0 , y: 14.30968618392947, label: "Annoy(n_trees=100, search_k=200000)" },
-                                                                    { x: 1.0 , y: 26.632185935974153, label: "Annoy(n_trees=100, search_k=400000)" },
+                                                                    { x: 1.0 , y: 1.3600873947143686, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -3308,18 +2999,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.986, 0.1633229255676275)
-                                    (0.9971, 0.18430113792419467)
-                                    (0.9996, 0.2198579311370882)
-                                    (1.0, 0.2842061519622813)
-                                    (1.0, 0.35668778419494757)
-                                    (1.0, 0.43273425102233926)
-                                    (1.0, 0.9355635643005379)
-                                    (1.0, 1.6876397132873637)
-                                    (1.0, 3.243029594421392)
-                                    (1.0, 7.138522624969485)
-                                    (1.0, 14.30968618392947)
-                                    (1.0, 26.632185935974153)
+                                                (1.0, 1.3600873947143686)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
