@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>kd</title>
+        <title>bruteforce</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for kd</h2>
+                                                        <h2>Plots for bruteforce</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,7 +62,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -151,7 +151,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (1.0, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -176,7 +176,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.013040542602539062, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.00047135353088378906, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -265,7 +265,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.013040542602539062)
+                                                (1.0, 0.00047135353088378906)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -290,7 +290,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 2176.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 128.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -379,7 +379,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 2176.0)
+                                                (1.0, 128.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -516,7 +516,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023580828681541894 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.023580828681541894 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -605,7 +605,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.023580828681541894, 7035.557687727079)
+                                                (0.023580828681541894, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -630,7 +630,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 10.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -744,7 +744,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.30928607177734374, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.10071304321289061, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -833,7 +833,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.30928607177734374)
+                                                (1.0, 0.10071304321289061)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -858,7 +858,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -947,7 +947,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (1.0, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -972,7 +972,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1061,7 +1061,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (1.0, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1086,7 +1086,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.13899803161621094, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.7848739624023438, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1175,7 +1175,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.13899803161621094)
+                                                (1.0, 0.7848739624023438)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1200,7 +1200,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.16621351242065427, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.8469104766845703, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1289,7 +1289,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.16621351242065427)
+                                                (1.0, 0.8469104766845703)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1314,7 +1314,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.20863533020019528, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.9650087356567377, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1403,7 +1403,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.20863533020019528)
+                                                (1.0, 0.9650087356567377)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1428,7 +1428,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.26424574851990446, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1.280421733856233, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1517,7 +1517,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.26424574851990446)
+                                                (1.0, 1.280421733856233)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1529,7 +1529,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for kd</h2>
+                                                        <h2>Scatterplots for bruteforce</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1544,7 +1544,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1633,7 +1633,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (1.0, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1658,7 +1658,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.013040542602539062, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.00047135353088378906, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1747,7 +1747,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.013040542602539062)
+                                                (1.0, 0.00047135353088378906)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1772,7 +1772,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 2176.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 128.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -1861,7 +1861,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 2176.0)
+                                                (1.0, 128.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1998,7 +1998,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023580828681541894 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.023580828681541894 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2087,7 +2087,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.023580828681541894, 7035.557687727079)
+                                                (0.023580828681541894, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2112,7 +2112,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 10.0, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2226,7 +2226,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.30928607177734374, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.10071304321289061, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2315,7 +2315,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.30928607177734374)
+                                                (1.0, 0.10071304321289061)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2340,7 +2340,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2429,7 +2429,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (1.0, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2454,7 +2454,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1270.9376652379503, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2543,7 +2543,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (1.0, 1270.9376652379503)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2568,7 +2568,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.13899803161621094, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.7848739624023438, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2657,7 +2657,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.13899803161621094)
+                                                (1.0, 0.7848739624023438)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2682,7 +2682,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.16621351242065427, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.8469104766845703, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2771,7 +2771,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.16621351242065427)
+                                                (1.0, 0.8469104766845703)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2796,7 +2796,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.20863533020019528, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.9650087356567377, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2885,7 +2885,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.20863533020019528)
+                                                (1.0, 0.9650087356567377)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2910,7 +2910,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.26424574851990446, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 1.280421733856233, label: "BruteForce()" },
                                                             ]
                         },
                                                 ]},
@@ -2999,7 +2999,7 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.26424574851990446)
+                                                (1.0, 1.280421733856233)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}

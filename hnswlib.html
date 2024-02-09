@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>kd</title>
+        <title>hnswlib</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for kd</h2>
+                                                        <h2>Plots for hnswlib</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,7 +62,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -151,7 +159,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.5666, 72733.17495274593)
+                                    (0.6075999999999999, 59824.61845671089)
+                                    (0.6563, 45756.87557955599)
+                                    (0.7026, 29197.06240645992)
+                                    (0.7302, 20826.670506626415)
+                                    (0.7786, 13031.940543362083)
+                                    (0.8368, 6984.499996669531)
+                                    (0.8661, 4741.0354692821475)
+                                    (0.8800000000000001, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -176,7 +192,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.013040542602539062, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.8800000000000001 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -265,7 +281,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.013040542602539062)
+                                                (0.8800000000000001, 1.9710502624511719)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -290,7 +306,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 2176.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.8800000000000001 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -379,7 +395,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 2176.0)
+                                                (0.8800000000000001, 2048.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -516,7 +532,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023580828681541894 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.13749301865587205 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.11768768475502886 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.1090112528195785 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10457323458155782 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10345363086295375 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.102802088774934 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10224606662447303 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10197564823120524 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.1018541181559332 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -605,7 +629,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.023580828681541894, 7035.557687727079)
+                                                (0.13749301865587205, 72733.17495274593)
+                                    (0.11768768475502886, 59824.61845671089)
+                                    (0.1090112528195785, 45756.87557955599)
+                                    (0.10457323458155782, 29197.06240645992)
+                                    (0.10345363086295375, 20826.670506626415)
+                                    (0.102802088774934, 13031.940543362083)
+                                    (0.10224606662447303, 6984.499996669531)
+                                    (0.10197564823120524, 4741.0354692821475)
+                                    (0.1018541181559332, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -630,7 +662,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.8800000000000001 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -719,7 +751,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 10.0)
+                                                (0.8800000000000001, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -744,7 +776,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.30928607177734374, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.02815771484375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.0342333984375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.04475830078125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.07014404296875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.09833544921875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.15715234375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.293220703125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.4319731445312501, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.56610400390625, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -833,7 +873,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.30928607177734374)
+                                                (0.5666, 0.02815771484375)
+                                    (0.6075999999999999, 0.0342333984375)
+                                    (0.6563, 0.04475830078125)
+                                    (0.7026, 0.07014404296875)
+                                    (0.7302, 0.09833544921875)
+                                    (0.7786, 0.15715234375)
+                                    (0.8368, 0.293220703125)
+                                    (0.8661, 0.4319731445312501)
+                                    (0.8800000000000001, 0.56610400390625)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -858,7 +906,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5355000000000001 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.5781 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.619 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6582 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6814 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7231 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7805 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8139 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8317 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -947,7 +1003,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.5355000000000001, 72733.17495274593)
+                                    (0.5781, 59824.61845671089)
+                                    (0.619, 45756.87557955599)
+                                    (0.6582, 29197.06240645992)
+                                    (0.6814, 20826.670506626415)
+                                    (0.7231, 13031.940543362083)
+                                    (0.7805, 6984.499996669531)
+                                    (0.8139, 4741.0354692821475)
+                                    (0.8317, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -972,7 +1036,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5904 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6386000000000001 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6944 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7461 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7773 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8253999999999999 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8791 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.9029 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.9107 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1061,7 +1133,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.5904, 72733.17495274593)
+                                    (0.6386000000000001, 59824.61845671089)
+                                    (0.6944, 45756.87557955599)
+                                    (0.7461, 29197.06240645992)
+                                    (0.7773, 20826.670506626415)
+                                    (0.8253999999999999, 13031.940543362083)
+                                    (0.8791, 6984.499996669531)
+                                    (0.9029, 4741.0354692821475)
+                                    (0.9107, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1086,7 +1166,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.13899803161621094, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.01239776611328125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.015735626220703125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.021457672119140625, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.03337860107421875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.047206878662109375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.07557868957519531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.1418590545654297, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.2090930938720703, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.27489662170410156, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1175,7 +1263,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.13899803161621094)
+                                                (0.5666, 0.01239776611328125)
+                                    (0.6075999999999999, 0.015735626220703125)
+                                    (0.6563, 0.021457672119140625)
+                                    (0.7026, 0.03337860107421875)
+                                    (0.7302, 0.047206878662109375)
+                                    (0.7786, 0.07557868957519531)
+                                    (0.8368, 0.1418590545654297)
+                                    (0.8661, 0.2090930938720703)
+                                    (0.8800000000000001, 0.27489662170410156)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1200,7 +1296,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.16621351242065427, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.016689300537109375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.021457672119140625, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.025033950805664062, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.038623809814453125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.05245208740234375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.08678436279296875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.15665292739868164, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.22840499877929688, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.29398202896118164, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1289,7 +1393,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.16621351242065427)
+                                                (0.5666, 0.016689300537109375)
+                                    (0.6075999999999999, 0.021457672119140625)
+                                    (0.6563, 0.025033950805664062)
+                                    (0.7026, 0.038623809814453125)
+                                    (0.7302, 0.05245208740234375)
+                                    (0.7786, 0.08678436279296875)
+                                    (0.8368, 0.15665292739868164)
+                                    (0.8661, 0.22840499877929688)
+                                    (0.8800000000000001, 0.29398202896118164)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1314,7 +1426,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.20863533020019528, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.031473636627197266, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.035288333892822266, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.03554105758666991, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.05126237869262695, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.06771326065063477, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.1025247573852539, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.1838231086730957, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.26679515838623047, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.308530330657959, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1403,7 +1523,15 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.20863533020019528)
+                                                (0.5666, 0.031473636627197266)
+                                    (0.6075999999999999, 0.035288333892822266)
+                                    (0.6563, 0.03554105758666991)
+                                    (0.7026, 0.05126237869262695)
+                                    (0.7302, 0.06771326065063477)
+                                    (0.7786, 0.1025247573852539)
+                                    (0.8368, 0.1838231086730957)
+                                    (0.8661, 0.26679515838623047)
+                                    (0.8800000000000001, 0.308530330657959)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1428,7 +1556,13 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.26424574851990446, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.6563 , y: 0.04935598373413116, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.12234401702881177, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.1364295482635547, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.16788315773010581, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.25106453895568936, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.31094264984131265, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.37504458427429305, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1517,7 +1651,13 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.26424574851990446)
+                                                (0.6563, 0.04935598373413116)
+                                    (0.7026, 0.12234401702881177)
+                                    (0.7302, 0.1364295482635547)
+                                    (0.7786, 0.16788315773010581)
+                                    (0.8368, 0.25106453895568936)
+                                    (0.8661, 0.31094264984131265)
+                                    (0.8800000000000001, 0.37504458427429305)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1529,7 +1669,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for kd</h2>
+                                                        <h2>Scatterplots for hnswlib</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1544,7 +1684,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1633,7 +1781,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.5666, 72733.17495274593)
+                                    (0.6075999999999999, 59824.61845671089)
+                                    (0.6563, 45756.87557955599)
+                                    (0.7026, 29197.06240645992)
+                                    (0.7302, 20826.670506626415)
+                                    (0.7786, 13031.940543362083)
+                                    (0.8368, 6984.499996669531)
+                                    (0.8661, 4741.0354692821475)
+                                    (0.8800000000000001, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1658,7 +1814,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.013040542602539062, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.8800000000000001 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.5666 , y: 1.9710502624511719, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1747,7 +1911,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.013040542602539062)
+                                                (0.8800000000000001, 1.9710502624511719)
+                                    (0.8661, 1.9710502624511719)
+                                    (0.8368, 1.9710502624511719)
+                                    (0.7786, 1.9710502624511719)
+                                    (0.7302, 1.9710502624511719)
+                                    (0.7026, 1.9710502624511719)
+                                    (0.6563, 1.9710502624511719)
+                                    (0.6075999999999999, 1.9710502624511719)
+                                    (0.5666, 1.9710502624511719)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1772,7 +1944,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 2176.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.8800000000000001 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.5666 , y: 2048.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -1861,7 +2041,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 2176.0)
+                                                (0.8800000000000001, 2048.0)
+                                    (0.8661, 2048.0)
+                                    (0.8368, 2048.0)
+                                    (0.7786, 2048.0)
+                                    (0.7302, 2048.0)
+                                    (0.7026, 2048.0)
+                                    (0.6563, 2048.0)
+                                    (0.6075999999999999, 2048.0)
+                                    (0.5666, 2048.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1998,7 +2186,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023580828681541894 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.13749301865587205 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.11768768475502886 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.1090112528195785 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10457323458155782 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10345363086295375 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.102802088774934 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10224606662447303 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.10197564823120524 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.1018541181559332 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2087,7 +2283,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.023580828681541894, 7035.557687727079)
+                                                (0.13749301865587205, 72733.17495274593)
+                                    (0.11768768475502886, 59824.61845671089)
+                                    (0.1090112528195785, 45756.87557955599)
+                                    (0.10457323458155782, 29197.06240645992)
+                                    (0.10345363086295375, 20826.670506626415)
+                                    (0.102802088774934, 13031.940543362083)
+                                    (0.10224606662447303, 6984.499996669531)
+                                    (0.10197564823120524, 4741.0354692821475)
+                                    (0.1018541181559332, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2112,7 +2316,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.8800000000000001 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.5666 , y: 10.0, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2201,7 +2413,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 10.0)
+                                                (0.8800000000000001, 10.0)
+                                    (0.8661, 10.0)
+                                    (0.8368, 10.0)
+                                    (0.7786, 10.0)
+                                    (0.7302, 10.0)
+                                    (0.7026, 10.0)
+                                    (0.6563, 10.0)
+                                    (0.6075999999999999, 10.0)
+                                    (0.5666, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2226,7 +2446,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.30928607177734374, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.02815771484375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.0342333984375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.04475830078125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.07014404296875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.09833544921875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.15715234375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.293220703125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.4319731445312501, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.56610400390625, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2315,7 +2543,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.30928607177734374)
+                                                (0.5666, 0.02815771484375)
+                                    (0.6075999999999999, 0.0342333984375)
+                                    (0.6563, 0.04475830078125)
+                                    (0.7026, 0.07014404296875)
+                                    (0.7302, 0.09833544921875)
+                                    (0.7786, 0.15715234375)
+                                    (0.8368, 0.293220703125)
+                                    (0.8661, 0.4319731445312501)
+                                    (0.8800000000000001, 0.56610400390625)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2340,7 +2576,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5355000000000001 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.5781 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.619 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6582 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6814 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7231 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7805 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8139 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8317 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2429,7 +2673,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.5355000000000001, 72733.17495274593)
+                                    (0.5781, 59824.61845671089)
+                                    (0.619, 45756.87557955599)
+                                    (0.6582, 29197.06240645992)
+                                    (0.6814, 20826.670506626415)
+                                    (0.7231, 13031.940543362083)
+                                    (0.7805, 6984.499996669531)
+                                    (0.8139, 4741.0354692821475)
+                                    (0.8317, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2454,7 +2706,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5904 , y: 72733.17495274593, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6386000000000001 , y: 59824.61845671089, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6944 , y: 45756.87557955599, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7461 , y: 29197.06240645992, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7773 , y: 20826.670506626415, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8253999999999999 , y: 13031.940543362083, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8791 , y: 6984.499996669531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.9029 , y: 4741.0354692821475, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.9107 , y: 3617.7097951406827, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2543,7 +2803,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.5904, 72733.17495274593)
+                                    (0.6386000000000001, 59824.61845671089)
+                                    (0.6944, 45756.87557955599)
+                                    (0.7461, 29197.06240645992)
+                                    (0.7773, 20826.670506626415)
+                                    (0.8253999999999999, 13031.940543362083)
+                                    (0.8791, 6984.499996669531)
+                                    (0.9029, 4741.0354692821475)
+                                    (0.9107, 3617.7097951406827)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2568,7 +2836,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.13899803161621094, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.01239776611328125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.015735626220703125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.021457672119140625, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.03337860107421875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.047206878662109375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.07557868957519531, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.1418590545654297, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.2090930938720703, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.27489662170410156, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2657,7 +2933,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.13899803161621094)
+                                                (0.5666, 0.01239776611328125)
+                                    (0.6075999999999999, 0.015735626220703125)
+                                    (0.6563, 0.021457672119140625)
+                                    (0.7026, 0.03337860107421875)
+                                    (0.7302, 0.047206878662109375)
+                                    (0.7786, 0.07557868957519531)
+                                    (0.8368, 0.1418590545654297)
+                                    (0.8661, 0.2090930938720703)
+                                    (0.8800000000000001, 0.27489662170410156)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2682,7 +2966,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.16621351242065427, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.016689300537109375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.021457672119140625, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.025033950805664062, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.038623809814453125, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.05245208740234375, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.08678436279296875, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.15665292739868164, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.22840499877929688, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.29398202896118164, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2771,7 +3063,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.16621351242065427)
+                                                (0.5666, 0.016689300537109375)
+                                    (0.6075999999999999, 0.021457672119140625)
+                                    (0.6563, 0.025033950805664062)
+                                    (0.7026, 0.038623809814453125)
+                                    (0.7302, 0.05245208740234375)
+                                    (0.7786, 0.08678436279296875)
+                                    (0.8368, 0.15665292739868164)
+                                    (0.8661, 0.22840499877929688)
+                                    (0.8800000000000001, 0.29398202896118164)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2796,7 +3096,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.20863533020019528, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.5666 , y: 0.031473636627197266, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.035288333892822266, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6563 , y: 0.03554105758666991, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.05126237869262695, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.06771326065063477, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.1025247573852539, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.1838231086730957, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.26679515838623047, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.308530330657959, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2885,7 +3193,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.20863533020019528)
+                                                (0.5666, 0.031473636627197266)
+                                    (0.6075999999999999, 0.035288333892822266)
+                                    (0.6563, 0.03554105758666991)
+                                    (0.7026, 0.05126237869262695)
+                                    (0.7302, 0.06771326065063477)
+                                    (0.7786, 0.1025247573852539)
+                                    (0.8368, 0.1838231086730957)
+                                    (0.8661, 0.26679515838623047)
+                                    (0.8800000000000001, 0.308530330657959)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2910,7 +3226,15 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.26424574851990446, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.6563 , y: 0.04935598373413116, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.6075999999999999 , y: 0.06463718414306872, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.5666 , y: 0.08317255973819891, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7026 , y: 0.12234401702881177, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7302 , y: 0.1364295482635547, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.7786 , y: 0.16788315773010581, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8368 , y: 0.25106453895568936, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8661 , y: 0.31094264984131265, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
+                                                                    { x: 0.8800000000000001 , y: 0.37504458427429305, label: "hnswlib ({'M': 12, 'efConstruction': 500})" },
                                                             ]
                         },
                                                 ]},
@@ -2999,7 +3323,15 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.26424574851990446)
+                                                (0.6563, 0.04935598373413116)
+                                    (0.6075999999999999, 0.06463718414306872)
+                                    (0.5666, 0.08317255973819891)
+                                    (0.7026, 0.12234401702881177)
+                                    (0.7302, 0.1364295482635547)
+                                    (0.7786, 0.16788315773010581)
+                                    (0.8368, 0.25106453895568936)
+                                    (0.8661, 0.31094264984131265)
+                                    (0.8800000000000001, 0.37504458427429305)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>kd</title>
+        <title>scann</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for kd</h2>
+                                                        <h2>Plots for scann</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,7 +62,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -151,7 +155,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.2698, 71545.85152838427)
+                                    (0.41479999999999995, 67600.99927471996)
+                                    (0.637, 65645.75149077363)
+                                    (0.8501, 59395.10316212809)
+                                    (1.0, 41791.75385105917)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -176,7 +184,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.013040542602539062, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -265,7 +273,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.013040542602539062)
+                                                (1.0, 0.4773247241973877)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -290,7 +298,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 2176.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -379,7 +387,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 2176.0)
+                                                (1.0, 6016.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -516,7 +524,8 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023580828681541894 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.024909733412684324 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -605,7 +614,8 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.023580828681541894, 7035.557687727079)
+                                                (0.024909733412684324, 59395.10316212809)
+                                    (0.02358082796574708, 41791.75385105917)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -630,7 +640,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 6.718, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 8.811, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 9.931, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -719,7 +732,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 10.0)
+                                                (0.2698, 6.718)
+                                    (0.41479999999999995, 8.811)
+                                    (0.637, 9.931)
+                                    (1.0, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -744,7 +760,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.30928607177734374, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 0.08408593750000001, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.08899276733398438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.09164340209960938, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.10128781127929688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.14395184326171873, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -833,7 +853,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.30928607177734374)
+                                                (0.2698, 0.08408593750000001)
+                                    (0.41479999999999995, 0.08899276733398438)
+                                    (0.637, 0.09164340209960938)
+                                    (0.8501, 0.10128781127929688)
+                                    (1.0, 0.14395184326171873)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -858,7 +882,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2312 , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.3507 , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.5374 , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.7311 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -947,7 +975,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.2312, 71545.85152838427)
+                                    (0.3507, 67600.99927471996)
+                                    (0.5374, 65645.75149077363)
+                                    (0.7311, 59395.10316212809)
+                                    (1.0, 41791.75385105917)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -972,7 +1004,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.3068 , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.4728 , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.7218 , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.925 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1061,7 +1097,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.3068, 71545.85152838427)
+                                    (0.4728, 67600.99927471996)
+                                    (0.7218, 65645.75149077363)
+                                    (0.925, 59395.10316212809)
+                                    (1.0, 41791.75385105917)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1086,7 +1126,11 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.13899803161621094, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 0.013589859008789062, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.014543533325195312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.015020370483398438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.023603439331054688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1175,7 +1219,11 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.13899803161621094)
+                                                (0.2698, 0.013589859008789062)
+                                    (0.41479999999999995, 0.014543533325195312)
+                                    (0.637, 0.015020370483398438)
+                                    (0.8501, 0.016450881958007812)
+                                    (1.0, 0.023603439331054688)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1200,7 +1248,9 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.16621351242065427, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.637 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.018358230590820312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.02574920654296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1289,7 +1339,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.16621351242065427)
+                                                (0.637, 0.016450881958007812)
+                                    (0.8501, 0.018358230590820312)
+                                    (1.0, 0.02574920654296875)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1314,7 +1366,9 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.20863533020019528, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.637 , y: 0.019578933715820285, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.023629665374755835, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03696203231811523, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1403,7 +1457,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.20863533020019528)
+                                                (0.637, 0.019578933715820285)
+                                    (0.8501, 0.023629665374755835)
+                                    (1.0, 0.03696203231811523)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1428,7 +1484,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.26424574851990446, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.41479999999999995 , y: 0.03433251380920412, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.035062074661256194, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.04506754875183164, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04840588569641176, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1517,7 +1576,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (1.0, 0.26424574851990446)
+                                                (0.41479999999999995, 0.03433251380920412)
+                                    (0.637, 0.035062074661256194)
+                                    (0.8501, 0.04506754875183164)
+                                    (1.0, 0.04840588569641176)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1529,7 +1591,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for kd</h2>
+                                                        <h2>Scatterplots for scann</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1544,7 +1606,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 38850.1773788683, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 38643.64554349629, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 36846.11667969745, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 35712.31278789582, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 33316.684141962956, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 31276.73504694153, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 30753.63679023933, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 28966.988038343603, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 26769.362343074874, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 24140.01807204646, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 21593.85489816512, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 19549.307853647166, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 18417.15296896886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 16036.95037088017, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 14102.862061545082, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 13134.124956160129, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 12290.964715121714, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10495.678416103217, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 8536.007782386247, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 5479.913665605778, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1633,7 +1719,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.2698, 71545.85152838427)
+                                    (0.41479999999999995, 67600.99927471996)
+                                    (0.637, 65645.75149077363)
+                                    (0.8501, 59395.10316212809)
+                                    (1.0, 41791.75385105917)
+                                    (1.0, 38850.1773788683)
+                                    (0.9996, 38643.64554349629)
+                                    (0.9996, 36846.11667969745)
+                                    (0.9996, 35712.31278789582)
+                                    (1.0, 33316.684141962956)
+                                    (1.0, 31276.73504694153)
+                                    (1.0, 30753.63679023933)
+                                    (1.0, 28966.988038343603)
+                                    (1.0, 26769.362343074874)
+                                    (1.0, 24140.01807204646)
+                                    (1.0, 21593.85489816512)
+                                    (1.0, 19549.307853647166)
+                                    (1.0, 18417.15296896886)
+                                    (1.0, 16036.95037088017)
+                                    (1.0, 14102.862061545082)
+                                    (1.0, 13134.124956160129)
+                                    (1.0, 12290.964715121714)
+                                    (1.0, 10495.678416103217)
+                                    (1.0, 8536.007782386247)
+                                    (1.0, 5479.913665605778)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1658,7 +1768,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.013040542602539062, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.2698 , y: 0.4773247241973877, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1747,7 +1881,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.013040542602539062)
+                                                (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (1.0, 0.4773247241973877)
+                                    (0.9996, 0.4773247241973877)
+                                    (0.9996, 0.4773247241973877)
+                                    (0.9996, 0.4773247241973877)
+                                    (0.8501, 0.4773247241973877)
+                                    (0.637, 0.4773247241973877)
+                                    (0.41479999999999995, 0.4773247241973877)
+                                    (0.2698, 0.4773247241973877)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1772,7 +1930,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 2176.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.2698 , y: 6016.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -1861,7 +2043,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 2176.0)
+                                                (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (1.0, 6016.0)
+                                    (0.9996, 6016.0)
+                                    (0.9996, 6016.0)
+                                    (0.9996, 6016.0)
+                                    (0.8501, 6016.0)
+                                    (0.637, 6016.0)
+                                    (0.41479999999999995, 6016.0)
+                                    (0.2698, 6016.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1998,7 +2204,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.023580828681541894 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: inf , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: inf , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: inf , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.024909733412684324 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 38850.1773788683, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02359390900655876 , y: 38643.64554349629, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02359390900655876 , y: 36846.11667969745, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02359390900655876 , y: 35712.31278789582, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 33316.684141962956, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 31276.73504694153, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 30753.63679023933, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 28966.988038343603, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 26769.362343074874, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 24140.01807204646, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 21593.85489816512, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 19549.307853647166, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 18417.15296896886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 16036.95037088017, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 14102.862061545082, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 13134.124956160129, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 12290.964715121714, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 10495.678416103217, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 8536.007782386247, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.02358082796574708 , y: 5479.913665605778, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2087,7 +2317,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.023580828681541894, 7035.557687727079)
+                                                (inf, 71545.85152838427)
+                                    (inf, 67600.99927471996)
+                                    (inf, 65645.75149077363)
+                                    (0.024909733412684324, 59395.10316212809)
+                                    (0.02358082796574708, 41791.75385105917)
+                                    (0.02358082796574708, 38850.1773788683)
+                                    (0.02359390900655876, 38643.64554349629)
+                                    (0.02359390900655876, 36846.11667969745)
+                                    (0.02359390900655876, 35712.31278789582)
+                                    (0.02358082796574708, 33316.684141962956)
+                                    (0.02358082796574708, 31276.73504694153)
+                                    (0.02358082796574708, 30753.63679023933)
+                                    (0.02358082796574708, 28966.988038343603)
+                                    (0.02358082796574708, 26769.362343074874)
+                                    (0.02358082796574708, 24140.01807204646)
+                                    (0.02358082796574708, 21593.85489816512)
+                                    (0.02358082796574708, 19549.307853647166)
+                                    (0.02358082796574708, 18417.15296896886)
+                                    (0.02358082796574708, 16036.95037088017)
+                                    (0.02358082796574708, 14102.862061545082)
+                                    (0.02358082796574708, 13134.124956160129)
+                                    (0.02358082796574708, 12290.964715121714)
+                                    (0.02358082796574708, 10495.678416103217)
+                                    (0.02358082796574708, 8536.007782386247)
+                                    (0.02358082796574708, 5479.913665605778)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2112,7 +2366,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 10.0, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 6.718, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 8.811, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 9.931, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 10.0, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2201,7 +2479,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 10.0)
+                                                (0.2698, 6.718)
+                                    (0.41479999999999995, 8.811)
+                                    (0.637, 9.931)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (1.0, 10.0)
+                                    (0.9996, 10.0)
+                                    (0.9996, 10.0)
+                                    (0.9996, 10.0)
+                                    (0.8501, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2226,7 +2528,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.30928607177734374, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 0.08408593750000001, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.08899276733398438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.09164340209960938, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.10128781127929688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.14395184326171873, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.15485128784179686, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.15567889404296872, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.16327365112304687, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.16845730590820313, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.18057019042968747, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.19234744262695314, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.19561914062499997, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.20768469238281248, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.2247345275878906, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.24921273803710936, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.2785977783203125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.3077346801757813, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.3266520080566407, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.37513366699218753, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.42658007812500004, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.45804345703125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.48946524047851564, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.5731882934570313, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.7047791137695312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 1.0978275146484375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2315,7 +2641,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.30928607177734374)
+                                                (0.2698, 0.08408593750000001)
+                                    (0.41479999999999995, 0.08899276733398438)
+                                    (0.637, 0.09164340209960938)
+                                    (0.8501, 0.10128781127929688)
+                                    (1.0, 0.14395184326171873)
+                                    (1.0, 0.15485128784179686)
+                                    (0.9996, 0.15567889404296872)
+                                    (0.9996, 0.16327365112304687)
+                                    (0.9996, 0.16845730590820313)
+                                    (1.0, 0.18057019042968747)
+                                    (1.0, 0.19234744262695314)
+                                    (1.0, 0.19561914062499997)
+                                    (1.0, 0.20768469238281248)
+                                    (1.0, 0.2247345275878906)
+                                    (1.0, 0.24921273803710936)
+                                    (1.0, 0.2785977783203125)
+                                    (1.0, 0.3077346801757813)
+                                    (1.0, 0.3266520080566407)
+                                    (1.0, 0.37513366699218753)
+                                    (1.0, 0.42658007812500004)
+                                    (1.0, 0.45804345703125)
+                                    (1.0, 0.48946524047851564)
+                                    (1.0, 0.5731882934570313)
+                                    (1.0, 0.7047791137695312)
+                                    (1.0, 1.0978275146484375)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2340,7 +2690,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2312 , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.3507 , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.5374 , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.7311 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 38850.1773788683, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9965999999999999 , y: 38643.64554349629, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9965999999999999 , y: 36846.11667969745, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9965999999999999 , y: 35712.31278789582, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 33316.684141962956, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 31276.73504694153, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 30753.63679023933, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 28966.988038343603, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 26769.362343074874, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 24140.01807204646, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 21593.85489816512, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 19549.307853647166, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 18417.15296896886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 16036.95037088017, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 14102.862061545082, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 13134.124956160129, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 12290.964715121714, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10495.678416103217, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 8536.007782386247, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 5479.913665605778, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2429,7 +2803,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.2312, 71545.85152838427)
+                                    (0.3507, 67600.99927471996)
+                                    (0.5374, 65645.75149077363)
+                                    (0.7311, 59395.10316212809)
+                                    (1.0, 41791.75385105917)
+                                    (1.0, 38850.1773788683)
+                                    (0.9965999999999999, 38643.64554349629)
+                                    (0.9965999999999999, 36846.11667969745)
+                                    (0.9965999999999999, 35712.31278789582)
+                                    (1.0, 33316.684141962956)
+                                    (1.0, 31276.73504694153)
+                                    (1.0, 30753.63679023933)
+                                    (1.0, 28966.988038343603)
+                                    (1.0, 26769.362343074874)
+                                    (1.0, 24140.01807204646)
+                                    (1.0, 21593.85489816512)
+                                    (1.0, 19549.307853647166)
+                                    (1.0, 18417.15296896886)
+                                    (1.0, 16036.95037088017)
+                                    (1.0, 14102.862061545082)
+                                    (1.0, 13134.124956160129)
+                                    (1.0, 12290.964715121714)
+                                    (1.0, 10495.678416103217)
+                                    (1.0, 8536.007782386247)
+                                    (1.0, 5479.913665605778)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2454,7 +2852,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 7035.557687727079, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.3068 , y: 71545.85152838427, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.4728 , y: 67600.99927471996, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.7218 , y: 65645.75149077363, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.925 , y: 59395.10316212809, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 41791.75385105917, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 38850.1773788683, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9999 , y: 38643.64554349629, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9999 , y: 36846.11667969745, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9999 , y: 35712.31278789582, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 33316.684141962956, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 31276.73504694153, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 30753.63679023933, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 28966.988038343603, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 26769.362343074874, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 24140.01807204646, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 21593.85489816512, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 19549.307853647166, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 18417.15296896886, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 16036.95037088017, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 14102.862061545082, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 13134.124956160129, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 12290.964715121714, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 10495.678416103217, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 8536.007782386247, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 5479.913665605778, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2543,7 +2965,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 7035.557687727079)
+                                                (0.3068, 71545.85152838427)
+                                    (0.4728, 67600.99927471996)
+                                    (0.7218, 65645.75149077363)
+                                    (0.925, 59395.10316212809)
+                                    (1.0, 41791.75385105917)
+                                    (1.0, 38850.1773788683)
+                                    (0.9999, 38643.64554349629)
+                                    (0.9999, 36846.11667969745)
+                                    (0.9999, 35712.31278789582)
+                                    (1.0, 33316.684141962956)
+                                    (1.0, 31276.73504694153)
+                                    (1.0, 30753.63679023933)
+                                    (1.0, 28966.988038343603)
+                                    (1.0, 26769.362343074874)
+                                    (1.0, 24140.01807204646)
+                                    (1.0, 21593.85489816512)
+                                    (1.0, 19549.307853647166)
+                                    (1.0, 18417.15296896886)
+                                    (1.0, 16036.95037088017)
+                                    (1.0, 14102.862061545082)
+                                    (1.0, 13134.124956160129)
+                                    (1.0, 12290.964715121714)
+                                    (1.0, 10495.678416103217)
+                                    (1.0, 8536.007782386247)
+                                    (1.0, 5479.913665605778)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2568,7 +3014,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.13899803161621094, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.2698 , y: 0.013589859008789062, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.014543533325195312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.015020370483398438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.023603439331054688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.025272369384765625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.025510787963867188, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.026702880859375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.02765655517578125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.02956390380859375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.031232833862304688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03218650817871094, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03409385681152344, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03695487976074219, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04100799560546875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04553794860839844, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.05054473876953125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.053882598876953125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06175041198730469, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.07033348083496094, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.07557868957519531, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.08034706115722656, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.09465217590332031, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.11610984802246094, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.18072128295898438, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2657,7 +3127,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.13899803161621094)
+                                                (0.2698, 0.013589859008789062)
+                                    (0.41479999999999995, 0.014543533325195312)
+                                    (0.637, 0.015020370483398438)
+                                    (0.8501, 0.016450881958007812)
+                                    (1.0, 0.023603439331054688)
+                                    (1.0, 0.025272369384765625)
+                                    (0.9996, 0.025510787963867188)
+                                    (0.9996, 0.026702880859375)
+                                    (0.9996, 0.02765655517578125)
+                                    (1.0, 0.02956390380859375)
+                                    (1.0, 0.031232833862304688)
+                                    (1.0, 0.03218650817871094)
+                                    (1.0, 0.03409385681152344)
+                                    (1.0, 0.03695487976074219)
+                                    (1.0, 0.04100799560546875)
+                                    (1.0, 0.04553794860839844)
+                                    (1.0, 0.05054473876953125)
+                                    (1.0, 0.053882598876953125)
+                                    (1.0, 0.06175041198730469)
+                                    (1.0, 0.07033348083496094)
+                                    (1.0, 0.07557868957519531)
+                                    (1.0, 0.08034706115722656)
+                                    (1.0, 0.09465217590332031)
+                                    (1.0, 0.11610984802246094)
+                                    (1.0, 0.18072128295898438)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2682,7 +3176,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.16621351242065427, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.637 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.2698 , y: 0.016450881958007812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.0171661376953125, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.018358230590820312, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.02574920654296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.027418136596679688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.027418136596679688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.02886056900024413, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.029325485229492188, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.031948089599609375, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.034332275390625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03482103347778319, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03647804260253906, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03933906555175781, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04315376281738281, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04912614822387694, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.05365610122680663, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.05698204040527344, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06556510925292969, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.07462501525878906, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.08034706115722656, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.08678436279296875, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.09942054748535156, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.12350082397460938, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.1957535743713379, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2771,7 +3289,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.16621351242065427)
+                                                (0.637, 0.016450881958007812)
+                                    (0.2698, 0.016450881958007812)
+                                    (0.41479999999999995, 0.0171661376953125)
+                                    (0.8501, 0.018358230590820312)
+                                    (1.0, 0.02574920654296875)
+                                    (1.0, 0.027418136596679688)
+                                    (0.9996, 0.027418136596679688)
+                                    (0.9996, 0.02886056900024413)
+                                    (0.9996, 0.029325485229492188)
+                                    (1.0, 0.031948089599609375)
+                                    (1.0, 0.034332275390625)
+                                    (1.0, 0.03482103347778319)
+                                    (1.0, 0.03647804260253906)
+                                    (1.0, 0.03933906555175781)
+                                    (1.0, 0.04315376281738281)
+                                    (1.0, 0.04912614822387694)
+                                    (1.0, 0.05365610122680663)
+                                    (1.0, 0.05698204040527344)
+                                    (1.0, 0.06556510925292969)
+                                    (1.0, 0.07462501525878906)
+                                    (1.0, 0.08034706115722656)
+                                    (1.0, 0.08678436279296875)
+                                    (1.0, 0.09942054748535156)
+                                    (1.0, 0.12350082397460938)
+                                    (1.0, 0.1957535743713379)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2796,7 +3338,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.20863533020019528, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.637 , y: 0.019578933715820285, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.2698 , y: 0.020265579223632812, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.41479999999999995 , y: 0.02218484878540038, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.023629665374755835, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03696203231811523, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.037677288055419915, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.03934383392333984, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.0400543212890625, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.0407719612121582, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04292249679565429, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.0472116470336914, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04793643951416014, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.0503087043762207, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.0548410415649414, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.055315494537353516, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06532907485961914, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06748199462890624, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06818771362304688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.07581710815429688, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.08608579635620116, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.09083986282348633, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.10133743286132811, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.1116061210632324, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.13639926910400388, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.20982503890991208, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2885,7 +3451,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.20863533020019528)
+                                                (0.637, 0.019578933715820285)
+                                    (0.2698, 0.020265579223632812)
+                                    (0.41479999999999995, 0.02218484878540038)
+                                    (0.8501, 0.023629665374755835)
+                                    (1.0, 0.03696203231811523)
+                                    (0.9996, 0.037677288055419915)
+                                    (1.0, 0.03934383392333984)
+                                    (0.9996, 0.0400543212890625)
+                                    (0.9996, 0.0407719612121582)
+                                    (1.0, 0.04292249679565429)
+                                    (1.0, 0.0472116470336914)
+                                    (1.0, 0.04793643951416014)
+                                    (1.0, 0.0503087043762207)
+                                    (1.0, 0.0548410415649414)
+                                    (1.0, 0.055315494537353516)
+                                    (1.0, 0.06532907485961914)
+                                    (1.0, 0.06748199462890624)
+                                    (1.0, 0.06818771362304688)
+                                    (1.0, 0.07581710815429688)
+                                    (1.0, 0.08608579635620116)
+                                    (1.0, 0.09083986282348633)
+                                    (1.0, 0.10133743286132811)
+                                    (1.0, 0.1116061210632324)
+                                    (1.0, 0.13639926910400388)
+                                    (1.0, 0.20982503890991208)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2910,7 +3500,31 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 1.0 , y: 0.26424574851990446, label: "KDTree(leaf_size=100)" },
+                                                                    { x: 0.41479999999999995 , y: 0.03433251380920412, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.637 , y: 0.035062074661256194, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.8501 , y: 0.04506754875183164, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.04840588569641176, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.05030918121337916, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.2698 , y: 0.05127954483032403, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.05316877365112318, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.05507516860961918, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.05698204040527344, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 0.9996 , y: 0.0581767559051516, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06294345855712899, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06366157531738316, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06580901145935109, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.06986165046691939, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.07844781875610425, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.09037041664123623, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.09274697303771992, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.09346032142639163, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.11682534217834475, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.11777925491333012, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.12707924842834492, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.1363790035247806, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.16403651237487835, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.18812108039856038, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
+                                                                    { x: 1.0 , y: 0.2799060344696047, label: "scann n_leaves=2000 avq_threshold=0.20 dims_per_block=2" },
                                                             ]
                         },
                                                 ]},
@@ -2999,7 +3613,31 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (1.0, 0.26424574851990446)
+                                                (0.41479999999999995, 0.03433251380920412)
+                                    (0.637, 0.035062074661256194)
+                                    (0.8501, 0.04506754875183164)
+                                    (1.0, 0.04840588569641176)
+                                    (0.9996, 0.05030918121337916)
+                                    (0.2698, 0.05127954483032403)
+                                    (1.0, 0.05316877365112318)
+                                    (0.9996, 0.05507516860961918)
+                                    (1.0, 0.05698204040527344)
+                                    (0.9996, 0.0581767559051516)
+                                    (1.0, 0.06294345855712899)
+                                    (1.0, 0.06366157531738316)
+                                    (1.0, 0.06580901145935109)
+                                    (1.0, 0.06986165046691939)
+                                    (1.0, 0.07844781875610425)
+                                    (1.0, 0.09037041664123623)
+                                    (1.0, 0.09274697303771992)
+                                    (1.0, 0.09346032142639163)
+                                    (1.0, 0.11682534217834475)
+                                    (1.0, 0.11777925491333012)
+                                    (1.0, 0.12707924842834492)
+                                    (1.0, 0.1363790035247806)
+                                    (1.0, 0.16403651237487835)
+                                    (1.0, 0.18812108039856038)
+                                    (1.0, 0.2799060344696047)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
