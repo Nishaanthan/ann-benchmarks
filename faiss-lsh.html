@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>sgia</title>
+        <title>faiss-lsh</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -47,7 +47,7 @@
             </nav>
 
                     <div class="container">
-                                                        <h2>Plots for sgia</h2>
+                                                        <h2>Plots for faiss-lsh</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)">
             <canvas id="chartRecallQueries per second (1/s)" width="800" height="600"></canvas>
@@ -62,7 +62,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -151,7 +154,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 136.5662523795205)
+                                                (0.3326, 33823.122888224054)
+                                    (0.42939999999999995, 30528.674056875003)
+                                    (0.7559, 7082.293186361917)
+                                    (0.8503000000000001, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -176,7 +182,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.005875349044799805, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.007764339447021484, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1748182773590088, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 1.1083424091339111, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -265,7 +274,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 0.056528568267822266)
+                                                (0.3326, 0.005875349044799805)
+                                    (0.42939999999999995, 0.007764339447021484)
+                                    (0.7559, 0.1748182773590088)
+                                    (0.8503000000000001, 1.1083424091339111)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -290,7 +302,9 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.42939999999999995 , y: 3808.0, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 10312.0, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 25016.0, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -379,7 +393,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 10240.0)
+                                                (0.42939999999999995, 3808.0)
+                                    (0.7559, 10312.0)
+                                    (0.8503000000000001, 25016.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -516,7 +532,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.02398734902262826 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.03341918492437086 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.030981838625659196 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.025382724875071865 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.024516959778221055 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -605,7 +624,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.02398734902262826, 136.5662523795205)
+                                                (0.03341918492437086, 33823.122888224054)
+                                    (0.030981838625659196, 30528.674056875003)
+                                    (0.025382724875071865, 7082.293186361917)
+                                    (0.024516959778221055, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -630,7 +652,7 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.8503000000000001 , y: 10.0, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -719,7 +741,7 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 10.0)
+                                                (0.8503000000000001, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -744,7 +766,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 74.98192138671875, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.11471442222595214, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.12473519134521485, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 1.4560255737304688, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 5.909497270584107, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -833,7 +858,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 74.98192138671875)
+                                                (0.3326, 0.11471442222595214)
+                                    (0.42939999999999995, 0.12473519134521485)
+                                    (0.7559, 1.4560255737304688)
+                                    (0.8503000000000001, 5.909497270584107)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -858,7 +886,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.8751 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.286 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.3681 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.6779 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.7725 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -947,7 +978,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.8751, 136.5662523795205)
+                                                (0.286, 33823.122888224054)
+                                    (0.3681, 30528.674056875003)
+                                    (0.6779, 7082.293186361917)
+                                    (0.7725, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -972,7 +1006,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9818 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3842 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.4861 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.8170999999999999 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.9061999999999999 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1061,7 +1098,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9818, 136.5662523795205)
+                                                (0.3842, 33823.122888224054)
+                                    (0.4861, 30528.674056875003)
+                                    (0.8170999999999999, 7082.293186361917)
+                                    (0.9061999999999999, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1086,7 +1126,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 4.160284996032715, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.0286102294921875, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.03170967102050781, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1392364501953125, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.23293495178222656, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1175,7 +1218,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 4.160284996032715)
+                                                (0.3326, 0.0286102294921875)
+                                    (0.42939999999999995, 0.03170967102050781)
+                                    (0.7559, 0.1392364501953125)
+                                    (0.8503000000000001, 0.23293495178222656)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1200,7 +1246,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 48.78135919570922, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.03362894058227538, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.03814697265625, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1518726348876953, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.25011301040649414, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1289,7 +1338,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 48.78135919570922)
+                                                (0.3326, 0.03362894058227538)
+                                    (0.42939999999999995, 0.03814697265625)
+                                    (0.7559, 0.1518726348876953)
+                                    (0.8503000000000001, 0.25011301040649414)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1314,7 +1366,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 50.77397346496581, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.04793882369995116, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.05889654159545898, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1685643196105957, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.27491331100463867, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1403,7 +1458,10 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 50.77397346496581)
+                                                (0.3326, 0.04793882369995116)
+                                    (0.42939999999999995, 0.05889654159545898)
+                                    (0.7559, 0.1685643196105957)
+                                    (0.8503000000000001, 0.27491331100463867)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1428,7 +1486,9 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 52.73513698577884, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.42939999999999995 , y: 0.08087468147278289, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.30064725875854503, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.37610912322999157, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1517,7 +1577,9 @@
             cycle list name = black white
             ]
                                 \addplot coordinates {
-                                                (0.9536, 52.73513698577884)
+                                                (0.42939999999999995, 0.08087468147278289)
+                                    (0.7559, 0.30064725875854503)
+                                    (0.8503000000000001, 0.37610912322999157)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1529,7 +1591,7 @@
                 </div>
             
                         <hr />
-                                                        <h2>Scatterplots for sgia</h2>
+                                                        <h2>Scatterplots for faiss-lsh</h2>
                                                                 <h3>Recall/Queries per second (1/s)</h3>
             <div id="RecallQueries per second (1/s)Scatterplot ">
             <canvas id="chartRecallQueries per second (1/s)Scatterplot " width="800" height="600"></canvas>
@@ -1544,18 +1606,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 135.87117806188726, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 135.16614450147142, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 135.12854629136558, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 133.75605346576071, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 133.66940114552813, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 133.54167806230996, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 132.96235488491396, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 132.42473522339893, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 132.15315736980082, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 128.33133201143895, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 125.93861985180254, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1644,18 +1698,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 136.5662523795205)
-                                    (0.9536, 135.87117806188726)
-                                    (0.9536, 135.16614450147142)
-                                    (0.9536, 135.12854629136558)
-                                    (0.9536, 133.75605346576071)
-                                    (0.9536, 133.66940114552813)
-                                    (0.9536, 133.54167806230996)
-                                    (0.9536, 132.96235488491396)
-                                    (0.9536, 132.42473522339893)
-                                    (0.9536, 132.15315736980082)
-                                    (0.9536, 128.33133201143895)
-                                    (0.9536, 125.93861985180254)
+                                                (0.3326, 33823.122888224054)
+                                    (0.42939999999999995, 30528.674056875003)
+                                    (0.7559, 7082.293186361917)
+                                    (0.8503000000000001, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1680,18 +1726,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 0.056528568267822266, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.005875349044799805, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.007764339447021484, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1748182773590088, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 1.1083424091339111, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1780,18 +1818,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
-                                    (0.9536, 0.056528568267822266)
+                                                (0.3326, 0.005875349044799805)
+                                    (0.42939999999999995, 0.007764339447021484)
+                                    (0.7559, 0.1748182773590088)
+                                    (0.8503000000000001, 1.1083424091339111)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -1816,18 +1846,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10240.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.42939999999999995 , y: 3808.0, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.3326 , y: 3880.0, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.7559 , y: 10312.0, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 25016.0, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -1916,18 +1938,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
-                                    (0.9536, 10240.0)
+                                                (0.42939999999999995, 3808.0)
+                                    (0.3326, 3880.0)
+                                    (0.7559, 10312.0)
+                                    (0.8503000000000001, 25016.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2064,18 +2078,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.02398734902262826 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 135.87117806188726, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 135.16614450147142, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 135.12854629136558, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 133.75605346576071, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 133.66940114552813, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 133.54167806230996, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 132.96235488491396, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 132.42473522339893, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 132.15315736980082, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 128.33133201143895, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.02398734902262826 , y: 125.93861985180254, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.03341918492437086 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.030981838625659196 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.025382724875071865 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.024516959778221055 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -2164,18 +2170,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.02398734902262826, 136.5662523795205)
-                                    (0.02398734902262826, 135.87117806188726)
-                                    (0.02398734902262826, 135.16614450147142)
-                                    (0.02398734902262826, 135.12854629136558)
-                                    (0.02398734902262826, 133.75605346576071)
-                                    (0.02398734902262826, 133.66940114552813)
-                                    (0.02398734902262826, 133.54167806230996)
-                                    (0.02398734902262826, 132.96235488491396)
-                                    (0.02398734902262826, 132.42473522339893)
-                                    (0.02398734902262826, 132.15315736980082)
-                                    (0.02398734902262826, 128.33133201143895)
-                                    (0.02398734902262826, 125.93861985180254)
+                                                (0.03341918492437086, 33823.122888224054)
+                                    (0.030981838625659196, 30528.674056875003)
+                                    (0.025382724875071865, 7082.293186361917)
+                                    (0.024516959778221055, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2200,18 +2198,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 10.0, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.8503000000000001 , y: 10.0, label: "FaissLSH(n_bits=2048)" },
+                                                                    { x: 0.7559 , y: 10.0, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.42939999999999995 , y: 10.0, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.3326 , y: 10.0, label: "FaissLSH(n_bits=64)" },
                                                             ]
                         },
                                                 ]},
@@ -2300,18 +2290,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
-                                    (0.9536, 10.0)
+                                                (0.8503000000000001, 10.0)
+                                    (0.7559, 10.0)
+                                    (0.42939999999999995, 10.0)
+                                    (0.3326, 10.0)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2336,18 +2318,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 74.98192138671875, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 75.36550537109375, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 75.75861572265626, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 75.77969482421875, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 76.55728271484375, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 76.60691162109374, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 76.6801806640625, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 77.01427978515625, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 77.326943359375, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 77.48585205078126, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 79.79345214843751, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 81.30945068359375, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.11471442222595214, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.12473519134521485, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 1.4560255737304688, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 5.909497270584107, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -2436,18 +2410,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 74.98192138671875)
-                                    (0.9536, 75.36550537109375)
-                                    (0.9536, 75.75861572265626)
-                                    (0.9536, 75.77969482421875)
-                                    (0.9536, 76.55728271484375)
-                                    (0.9536, 76.60691162109374)
-                                    (0.9536, 76.6801806640625)
-                                    (0.9536, 77.01427978515625)
-                                    (0.9536, 77.326943359375)
-                                    (0.9536, 77.48585205078126)
-                                    (0.9536, 79.79345214843751)
-                                    (0.9536, 81.30945068359375)
+                                                (0.3326, 0.11471442222595214)
+                                    (0.42939999999999995, 0.12473519134521485)
+                                    (0.7559, 1.4560255737304688)
+                                    (0.8503000000000001, 5.909497270584107)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2472,18 +2438,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.8751 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 135.87117806188726, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 135.16614450147142, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 135.12854629136558, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 133.75605346576071, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 133.66940114552813, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 133.54167806230996, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 132.96235488491396, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 132.42473522339893, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 132.15315736980082, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 128.33133201143895, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.8751 , y: 125.93861985180254, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.286 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.3681 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.6779 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.7725 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -2572,18 +2530,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.8751, 136.5662523795205)
-                                    (0.8751, 135.87117806188726)
-                                    (0.8751, 135.16614450147142)
-                                    (0.8751, 135.12854629136558)
-                                    (0.8751, 133.75605346576071)
-                                    (0.8751, 133.66940114552813)
-                                    (0.8751, 133.54167806230996)
-                                    (0.8751, 132.96235488491396)
-                                    (0.8751, 132.42473522339893)
-                                    (0.8751, 132.15315736980082)
-                                    (0.8751, 128.33133201143895)
-                                    (0.8751, 125.93861985180254)
+                                                (0.286, 33823.122888224054)
+                                    (0.3681, 30528.674056875003)
+                                    (0.6779, 7082.293186361917)
+                                    (0.7725, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2608,18 +2558,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9818 , y: 136.5662523795205, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 135.87117806188726, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 135.16614450147142, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 135.12854629136558, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 133.75605346576071, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 133.66940114552813, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 133.54167806230996, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 132.96235488491396, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 132.42473522339893, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 132.15315736980082, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 128.33133201143895, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9818 , y: 125.93861985180254, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3842 , y: 33823.122888224054, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.4861 , y: 30528.674056875003, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.8170999999999999 , y: 7082.293186361917, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.9061999999999999 , y: 4233.185811680283, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -2708,18 +2650,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9818, 136.5662523795205)
-                                    (0.9818, 135.87117806188726)
-                                    (0.9818, 135.16614450147142)
-                                    (0.9818, 135.12854629136558)
-                                    (0.9818, 133.75605346576071)
-                                    (0.9818, 133.66940114552813)
-                                    (0.9818, 133.54167806230996)
-                                    (0.9818, 132.96235488491396)
-                                    (0.9818, 132.42473522339893)
-                                    (0.9818, 132.15315736980082)
-                                    (0.9818, 128.33133201143895)
-                                    (0.9818, 125.93861985180254)
+                                                (0.3842, 33823.122888224054)
+                                    (0.4861, 30528.674056875003)
+                                    (0.8170999999999999, 7082.293186361917)
+                                    (0.9061999999999999, 4233.185811680283)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2744,18 +2678,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 4.160284996032715, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.178166389465332, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.2008161544799805, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.222869873046875, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.2389631271362305, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.247069358825684, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.247069358825684, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.271984100341797, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.288196563720703, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.2896270751953125, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.318833351135254, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 4.452347755432129, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.0286102294921875, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.03170967102050781, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1392364501953125, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.23293495178222656, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -2844,18 +2770,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 4.160284996032715)
-                                    (0.9536, 4.178166389465332)
-                                    (0.9536, 4.2008161544799805)
-                                    (0.9536, 4.222869873046875)
-                                    (0.9536, 4.2389631271362305)
-                                    (0.9536, 4.247069358825684)
-                                    (0.9536, 4.247069358825684)
-                                    (0.9536, 4.271984100341797)
-                                    (0.9536, 4.288196563720703)
-                                    (0.9536, 4.2896270751953125)
-                                    (0.9536, 4.318833351135254)
-                                    (0.9536, 4.452347755432129)
+                                                (0.3326, 0.0286102294921875)
+                                    (0.42939999999999995, 0.03170967102050781)
+                                    (0.7559, 0.1392364501953125)
+                                    (0.8503000000000001, 0.23293495178222656)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -2880,18 +2798,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 48.78135919570922, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.80565404891968, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.82054328918457, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.83006811141968, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.84418249130249, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.86138439178467, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.869538307189934, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.87123107910156, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.94711971282959, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 48.989224433898926, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 49.186789989471436, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 50.19510984420776, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.03362894058227538, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.03814697265625, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1518726348876953, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.25011301040649414, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -2980,18 +2890,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 48.78135919570922)
-                                    (0.9536, 48.80565404891968)
-                                    (0.9536, 48.82054328918457)
-                                    (0.9536, 48.83006811141968)
-                                    (0.9536, 48.84418249130249)
-                                    (0.9536, 48.86138439178467)
-                                    (0.9536, 48.869538307189934)
-                                    (0.9536, 48.87123107910156)
-                                    (0.9536, 48.94711971282959)
-                                    (0.9536, 48.989224433898926)
-                                    (0.9536, 49.186789989471436)
-                                    (0.9536, 50.19510984420776)
+                                                (0.3326, 0.03362894058227538)
+                                    (0.42939999999999995, 0.03814697265625)
+                                    (0.7559, 0.1518726348876953)
+                                    (0.8503000000000001, 0.25011301040649414)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3016,18 +2918,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 50.77397346496581, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 51.79614543914795, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 52.11028337478638, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 52.372913360595696, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 52.476627826690674, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 52.71346569061279, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 53.09053659439087, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 53.26400995254516, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 53.286771774291985, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 53.29984188079834, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.28518056869507, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.53702449798584, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.3326 , y: 0.04793882369995116, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.42939999999999995 , y: 0.05889654159545898, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.7559 , y: 0.1685643196105957, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.27491331100463867, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -3116,18 +3010,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 50.77397346496581)
-                                    (0.9536, 51.79614543914795)
-                                    (0.9536, 52.11028337478638)
-                                    (0.9536, 52.372913360595696)
-                                    (0.9536, 52.476627826690674)
-                                    (0.9536, 52.71346569061279)
-                                    (0.9536, 53.09053659439087)
-                                    (0.9536, 53.26400995254516)
-                                    (0.9536, 53.286771774291985)
-                                    (0.9536, 53.29984188079834)
-                                    (0.9536, 54.28518056869507)
-                                    (0.9536, 54.53702449798584)
+                                                (0.3326, 0.04793882369995116)
+                                    (0.42939999999999995, 0.05889654159545898)
+                                    (0.7559, 0.1685643196105957)
+                                    (0.8503000000000001, 0.27491331100463867)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
@@ -3152,18 +3038,10 @@
                             pointStyle: "rect",
                             borderColor: "rgba(229, 102, 102, 1)",
                             data: [
-                                                                    { x: 0.9536 , y: 52.73513698577884, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 53.77595758438116, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.04627203941349, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.087616205215475, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.399112224579035, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.411872386932394, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 54.89985489845294, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 55.310848236084, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 55.417566299438505, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 55.96593570709229, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 56.11899137496957, label: "SGIA(dimensions=20)" },
-                                                                    { x: 0.9536 , y: 56.235381841689176, label: "SGIA(dimensions=20)" },
+                                                                    { x: 0.42939999999999995 , y: 0.08087468147278289, label: "FaissLSH(n_bits=128)" },
+                                                                    { x: 0.3326 , y: 0.08706974983215755, label: "FaissLSH(n_bits=64)" },
+                                                                    { x: 0.7559 , y: 0.30064725875854503, label: "FaissLSH(n_bits=1024)" },
+                                                                    { x: 0.8503000000000001 , y: 0.37610912322999157, label: "FaissLSH(n_bits=2048)" },
                                                             ]
                         },
                                                 ]},
@@ -3252,18 +3130,10 @@
             cycle list name = black white
             ]
                                 \addplot [only marks] coordinates {
-                                                (0.9536, 52.73513698577884)
-                                    (0.9536, 53.77595758438116)
-                                    (0.9536, 54.04627203941349)
-                                    (0.9536, 54.087616205215475)
-                                    (0.9536, 54.399112224579035)
-                                    (0.9536, 54.411872386932394)
-                                    (0.9536, 54.89985489845294)
-                                    (0.9536, 55.310848236084)
-                                    (0.9536, 55.417566299438505)
-                                    (0.9536, 55.96593570709229)
-                                    (0.9536, 56.11899137496957)
-                                    (0.9536, 56.235381841689176)
+                                                (0.42939999999999995, 0.08087468147278289)
+                                    (0.3326, 0.08706974983215755)
+                                    (0.7559, 0.30064725875854503)
+                                    (0.8503000000000001, 0.37610912322999157)
                             };
             \addlegendentry{ random-xs-20-angular (k = 10) };
             \end{axis}
