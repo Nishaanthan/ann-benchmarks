@@ -5,6 +5,7 @@ from ..base.module import BaseANN
 
 
 class Scann(BaseANN):
+    i = 0
     def __init__(self, n_leaves, avq_threshold, dims_per_block, dist):
         self.name = "scann n_leaves={} avq_threshold={:.02f} dims_per_block={}".format(
             n_leaves, avq_threshold, dims_per_block
@@ -34,5 +35,7 @@ class Scann(BaseANN):
         self.leaves_to_search, self.reorder = leaves_reorder
 
     def query(self, v, n):
-        print(self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0])
+        if(self.i == 0):
+            print(self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0])
+            self.i = 1
         return self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0]

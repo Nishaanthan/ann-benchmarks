@@ -3,6 +3,7 @@ from sgia import SGIA
 from ..base.module import BaseANN
 
 class Sgia(BaseANN):
+    i = 0
     def __init__(self):
         self._sgia = None
         self._dimensions = None
@@ -11,23 +12,23 @@ class Sgia(BaseANN):
     def fit(self, X):
         self._dimensions = X.shape[1]
         self._sgia = SGIA(dimensions=self._dimensions)
-        y = 0
         for i, x in enumerate(X):
-            if(y == 0):
+            if(self.i == 0):
                 print ("====VECTOR======================================================")
                 print (x.tolist())
                 print ("====END VECTOR======================================================")
                 print ("====DIMENSION======================================================")
                 print (self._dimensions)
                 print ("====END DIMENSION======================================================")
-                y = 1
             self._sgia.insert(x.tolist(), i)
 
     def set_query_arguments(self, query):
         self._query = query
 
     def query(self, v, n):
-        print(self._sgia.search(v.tolist(), n))
+        if(self.i == 0):
+            print(self._sgia.search(v.tolist(), n))
+            self.i = 1
         return self._sgia.search(v.tolist(), n)
 
     def __str__(self):
