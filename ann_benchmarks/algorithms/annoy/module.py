@@ -4,6 +4,7 @@ from ..base.module import BaseANN
 
 class Annoy(BaseANN):
     i = 0
+    y = 0
     def __init__(self, metric, n_trees):
         self._n_trees = n_trees
         self._search_k = None
@@ -16,6 +17,7 @@ class Annoy(BaseANN):
                 print ("====VECTOR======================================================")
                 print (x.tolist())
                 print ("====END VECTOR======================================================")
+                self.i = 1
             self._annoy.add_item(i, x.tolist())
         self._annoy.build(self._n_trees)
 
@@ -23,9 +25,9 @@ class Annoy(BaseANN):
         self._search_k = search_k
 
     def query(self, v, n):
-        if(self.i == 0):
+        if(self.y == 0):
             print(self._annoy.get_nns_by_vector(v.tolist(), n, self._search_k))
-            self.i = 1
+            self.y = 1
         return self._annoy.get_nns_by_vector(v.tolist(), n, self._search_k)
 
     def __str__(self):

@@ -4,6 +4,7 @@ from ..base.module import BaseANN
 
 class Sgia(BaseANN):
     i = 0
+    y = 0
     def __init__(self):
         self._sgia = None
         self._dimensions = None
@@ -20,15 +21,16 @@ class Sgia(BaseANN):
                 print ("====DIMENSION======================================================")
                 print (self._dimensions)
                 print ("====END DIMENSION======================================================")
+                self.i = 1
             self._sgia.insert(x.tolist(), i)
 
     def set_query_arguments(self, query):
         self._query = query
 
     def query(self, v, n):
-        if(self.i == 0):
+        if(self.y == 0):
             print(self._sgia.search(v.tolist(), n))
-            self.i = 1
+            self.y = 1
         return self._sgia.search(v.tolist(), n)
 
     def __str__(self):
