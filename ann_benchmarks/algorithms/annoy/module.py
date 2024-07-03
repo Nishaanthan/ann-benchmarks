@@ -18,6 +18,7 @@ class Annoy(BaseANN):
         self._search_k = search_k
 
     def query(self, v, n):
+        print(self._annoy.get_nns_by_vector(v.tolist(), n, self._search_k))
         return self._annoy.get_nns_by_vector(v.tolist(), n, self._search_k)
 
     def __str__(self):

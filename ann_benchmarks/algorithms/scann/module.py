@@ -34,4 +34,5 @@ class Scann(BaseANN):
         self.leaves_to_search, self.reorder = leaves_reorder
 
     def query(self, v, n):
+        print(self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0])
         return self.searcher.search(v, n, self.reorder, self.leaves_to_search)[0]
