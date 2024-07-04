@@ -31,7 +31,7 @@ jobs:
         python3 install.py --algorithm annoy
         python3 install.py --algorithm sgia
         python3 install.py --algorithm scann
-        # python3 install.py --algorithm hnswlib
+        python3 install.py --algorithm hnswlib
         # python3 install.py --algorithm kdtree
         # python3 install.py --algorithm bruteforce
         # python3 install.py --algorithm faiss
@@ -46,7 +46,7 @@ jobs:
         export DOCKER_HOST=unix:///var/run/docker.sock
         docker version
         sudo chmod 666 /var/run/docker.sock
-        python run.py --max-n-algorithms 3 --runs 1 --dataset random-xs-20-angular --run-disabled --timeout 300
+        python run.py --max-n-algorithms 4 --runs 1 --dataset random-xs-20-angular --run-disabled --timeout 300
         # python run.py --algorithm ckdtree --output results/ckdtree.json
         # python run.py --algorithm kdtree --output results/kdtree.json
         sudo chmod -R 777 results/
